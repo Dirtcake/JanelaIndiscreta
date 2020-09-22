@@ -32,7 +32,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
-                    target.position = hit.point;
+                    iInteragivel obj = hit.collider.GetComponent<iInteragivel>();
+                    if (obj != null) obj.acao();
+                    else target.position = hit.point;
                 }
             }
 
