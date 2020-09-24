@@ -59,9 +59,13 @@ MonoBehaviour:
   Path: ../FMOD/inter6s/Build/Desktop/Ambience.bank
   Name: Ambience
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   lastModified: 637363880579271667
 =======
   lastModified: 637364184289624410
+>>>>>>> Stashed changes
+=======
+  lastModified: 637364031002948310
 >>>>>>> Stashed changes
   LoadResult: 0
   FileSizes: []
@@ -86,7 +90,11 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &-6750882348490080724
+=======
+--- !u!114 &-7748916785651453365
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +104,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+<<<<<<< Updated upstream
   m_Name: parameter:/PianoMusicPH/Volume
+=======
+  m_Name: parameter:/DefaultAmbience/Volume
+>>>>>>> Stashed changes
   m_EditorClassIdentifier: 
   Name: Volume
   Min: 0
@@ -106,6 +118,33 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+<<<<<<< Updated upstream
+=======
+--- !u!114 &-7250158111053666215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/WalkRun
+  m_EditorClassIdentifier: 
+  Path: event:/Player/WalkRun
+  guid: 66affb94b063694b9ecd3f821b2e9f53
+  Banks:
+  - {fileID: -5818818210390581039}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5654038971737060666}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 320
+>>>>>>> Stashed changes
 --- !u!114 &-6319605196745782114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,9 +180,13 @@ MonoBehaviour:
   Path: ../FMOD/inter6s/Build/Desktop/Player.bank
   Name: Player
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   lastModified: 637363880579830177
 =======
   lastModified: 637364184291394532
+>>>>>>> Stashed changes
+=======
+  lastModified: 637364031003147787
 >>>>>>> Stashed changes
   LoadResult: 0
   FileSizes: []
@@ -183,9 +226,13 @@ MonoBehaviour:
   Path: ../FMOD/inter6s/Build/Desktop/Master.strings.bank
   Name: Master.strings
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   lastModified: 637363880579740403
 =======
   lastModified: 637364184290214449
+>>>>>>> Stashed changes
+=======
+  lastModified: 637364031002958288
 >>>>>>> Stashed changes
   LoadResult: 0
   FileSizes:
@@ -216,7 +263,11 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 45598
+<<<<<<< Updated upstream
 --- !u!114 &-3659339433746639228
+=======
+--- !u!114 &-4242339097346975954
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,7 +277,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+<<<<<<< Updated upstream
   m_Name: parameter:/WalkRun/Volume
+=======
+  m_Name: parameter:/PianoMusicPH/Volume
+>>>>>>> Stashed changes
   m_EditorClassIdentifier: 
   Name: Volume
   Min: 0
@@ -236,6 +291,57 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+<<<<<<< Updated upstream
+=======
+--- !u!114 &-3348761529412352713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Piano/PianoMusicPH
+  m_EditorClassIdentifier: 
+  Path: event:/Piano/PianoMusicPH
+  guid: 6c872a89a7e017478e23d33997988235
+  Banks:
+  - {fileID: -3044277188874227055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4242339097346975954}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32600
+--- !u!114 &-3238484347268945136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/DefaultAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/DefaultAmbience
+  guid: 3168a267b0d9b24cae8da5cc9bce1bd4
+  Banks:
+  - {fileID: -8262268827800480930}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7748916785651453365}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 45598
+>>>>>>> Stashed changes
 --- !u!114 &-3044277188874227055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,9 +357,13 @@ MonoBehaviour:
   Path: ../FMOD/inter6s/Build/Desktop/Piano.bank
   Name: Piano
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   lastModified: 637363880579810531
 =======
   lastModified: 637364184291094527
+>>>>>>> Stashed changes
+=======
+  lastModified: 637364031003127835
 >>>>>>> Stashed changes
   LoadResult: 0
   FileSizes: []
@@ -370,6 +480,7 @@ MonoBehaviour:
   - {fileID: -5818818210390581039}
   EditorEvents:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 5805213897408627509}
   - {fileID: 5205506537428996926}
   - {fileID: 1877597991281419305}
@@ -380,11 +491,18 @@ MonoBehaviour:
   - {fileID: -1867401628215051604}
   - {fileID: -525622782337755070}
 >>>>>>> Stashed changes
+=======
+  - {fileID: -3238484347268945136}
+  - {fileID: 8746865994346217721}
+  - {fileID: -3348761529412352713}
+  - {fileID: -7250158111053666215}
+>>>>>>> Stashed changes
   EditorParameters: []
   MasterBanks:
   - {fileID: 2993310423460286269}
   StringsBanks:
   - {fileID: -4533840783398887647}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   stringsBankWriteTime: 637363880579740403
 =======
@@ -392,6 +510,11 @@ MonoBehaviour:
 >>>>>>> Stashed changes
   cacheVersion: 5
 --- !u!114 &1816142884098677976
+=======
+  stringsBankWriteTime: 637364031002958288
+  cacheVersion: 5
+--- !u!114 &401322664862535052
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -401,7 +524,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+<<<<<<< Updated upstream
   m_Name: parameter:/PianoMusicPH/Volume
+=======
+  m_Name: parameter:/PianoMusic1/Volume
+>>>>>>> Stashed changes
   m_EditorClassIdentifier: 
   Name: Volume
   Min: 0
@@ -411,6 +538,7 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &1877597991281419305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,6 +587,8 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 320
+=======
+>>>>>>> Stashed changes
 --- !u!114 &2993310423460286269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +603,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Master.bank
   Name: Master
+<<<<<<< Updated upstream
   lastModified: 637363052012248464
+=======
+  lastModified: 637363156698537945
+>>>>>>> Stashed changes
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -498,7 +632,11 @@ MonoBehaviour:
     data2: 0
   Exists: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &4118092078776490408
+=======
+--- !u!114 &5654038971737060666
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -508,7 +646,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+<<<<<<< Updated upstream
   m_Name: parameter:/PianoMusic1/Volume
+=======
+  m_Name: parameter:/WalkRun/Volume
+>>>>>>> Stashed changes
   m_EditorClassIdentifier: 
   Name: Volume
   Min: 0
@@ -518,6 +660,7 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &5205506537428996926
 =======
 --- !u!114 &4642580130339657696
@@ -575,6 +718,8 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 56017
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!114 &6006284479962057157
 MonoBehaviour:
@@ -644,7 +789,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 34600
+<<<<<<< Updated upstream
 --- !u!114 &8170793689754074685
+=======
+--- !u!114 &8746865994346217721
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -653,6 +802,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/PianoMusic1/Volume
   m_EditorClassIdentifier: 
@@ -664,3 +814,20 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+=======
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Piano/PianoMusic1
+  m_EditorClassIdentifier: 
+  Path: event:/Piano/PianoMusic1
+  guid: 6287f6d3691b334c8973e099a3a58604
+  Banks:
+  - {fileID: -3044277188874227055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 401322664862535052}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56017
+>>>>>>> Stashed changes
