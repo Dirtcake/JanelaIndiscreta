@@ -17,4 +17,5 @@ public class inJanela : inBase
     public override void exclusivo()
     {
         //Trocar imagem pra janela
+    }
 }
