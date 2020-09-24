@@ -78,7 +78,7 @@
 			<destination>{c2b4bd08-c531-48a1-9805-52e40c66e0a2}</destination>
 		</relationship>
 		<relationship name="markers">
-			<destination>{7a3b3211-5b65-4250-95e2-2347698409f6}</destination>
+			<destination>{ccdc7b5f-d637-4471-9fad-603192e0aeb5}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{ada6d74e-7c4d-4441-8091-ee27a93f294f}">
@@ -117,6 +117,9 @@
 		<property name="length">
 			<value>0.32000000000000001</value>
 		</property>
+		<property name="volume">
+			<value>-23.5</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{3a6a5c39-b7c3-4e5d-b897-b8ca814152fa}</destination>
 			<destination>{f25c43c3-ca65-45e5-be52-1ec024cd19b6}</destination>
@@ -142,7 +145,7 @@
 			<destination>{5333d3f7-afaa-4fba-afda-cd1d5c1507e8}</destination>
 		</relationship>
 	</object>
-	<object class="LoopRegion" id="{7a3b3211-5b65-4250-95e2-2347698409f6}">
+	<object class="LoopRegion" id="{ccdc7b5f-d637-4471-9fad-603192e0aeb5}">
 		<property name="position">
 			<value>0</value>
 		</property>

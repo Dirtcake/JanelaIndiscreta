@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 76a954a9e29b77642b5688f4793ec0a2,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2031,6 +2031,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2140602187065756632, guid: 8725c8ec2667ce64e8d734a9cc955727, type: 3}
+--- !u!1 &200023432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 113348, guid: 54eb5844754051b40a918a84c33b7c1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &200023433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200023432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42baa6b177e201479b88ef2ece360e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkEvent: event:/Player/WalkRun
+  navAgent: {fileID: 200023436}
+  curSpeed: 0
+--- !u!195 &200023436 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 19597056, guid: 54eb5844754051b40a918a84c33b7c1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &201691630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5224859813689589598, guid: 8725c8ec2667ce64e8d734a9cc955727,
@@ -11145,6 +11172,8 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
   - component: {fileID: 963194232}
+  - component: {fileID: 963194233}
+  - component: {fileID: 963194234}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11336,6 +11365,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c5509746376074e900a197a41e5ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstPianoMusic: event:/Piano/PianoMusic1
+--- !u!114 &963194233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
+--- !u!114 &963194234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambient/DefaultAmbience
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Volume
+    Value: 100
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &963631131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1b3ba31de8fc81b44a6f7bfbb24bf536,
@@ -15873,7 +15942,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481031109}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b128ae5057234d44eb9c15f0858e45cd, type: 3}
@@ -18607,10 +18676,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   feedBack: {fileID: 1885710453}
+  firstPianoMusic: event:/Piano/PianoMusic1
   assasino: {fileID: 173959310}
   observador: {fileID: 1334044240}
   perdestes: {fileID: 1572446809}
   ganhastes: {fileID: 126542308}
+  isMusicPlaying: 0
 --- !u!65 &1785681431
 BoxCollider:
   m_ObjectHideFlags: 0
