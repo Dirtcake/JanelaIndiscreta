@@ -33,8 +33,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
                     iInteragivel obj = hit.collider.GetComponent<iInteragivel>();
-                    if (obj != null) obj.acao();
-                    else target.position = hit.point;
+                    if (obj != null)
+                    {
+                        obj.acao();
+                    }
+                    target.position = hit.point;
                 }
             }
 
