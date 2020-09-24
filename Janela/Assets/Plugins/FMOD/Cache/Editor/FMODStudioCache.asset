@@ -58,7 +58,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Ambience.bank
   Name: Ambience
-  lastModified: 637363134906868370
+  lastModified: 637363880579271667
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Player.bank
   Name: Player
-  lastModified: 637363134906938364
+  lastModified: 637363880579830177
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -134,11 +134,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637363134906888369
+  lastModified: 637363880579740403
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1078
+    Value: 1154
   Exists: 1
 --- !u!114 &-4350852603620617886
 MonoBehaviour:
@@ -164,6 +164,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 45598
+--- !u!114 &-3659339433746639228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WalkRun/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3044277188874227055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Piano.bank
   Name: Piano
-  lastModified: 637363134906938364
+  lastModified: 637363880579810531
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -221,16 +241,85 @@ MonoBehaviour:
   - {fileID: -3044277188874227055}
   - {fileID: -5818818210390581039}
   EditorEvents:
-  - {fileID: -4350852603620617886}
-  - {fileID: 6478132495615546835}
-  - {fileID: -8414687748832341956}
+  - {fileID: 5805213897408627509}
+  - {fileID: 5205506537428996926}
+  - {fileID: 1877597991281419305}
+  - {fileID: 2199881546884765951}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2993310423460286269}
   StringsBanks:
   - {fileID: -4533840783398887647}
-  stringsBankWriteTime: 637363134906888369
+  stringsBankWriteTime: 637363880579740403
   cacheVersion: 5
+--- !u!114 &1816142884098677976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoMusicPH/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &1877597991281419305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Piano/PianoMusicPH
+  m_EditorClassIdentifier: 
+  Path: event:/Piano/PianoMusicPH
+  guid: 6c872a89a7e017478e23d33997988235
+  Banks:
+  - {fileID: -3044277188874227055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1816142884098677976}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32600
+--- !u!114 &2199881546884765951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/WalkRun
+  m_EditorClassIdentifier: 
+  Path: event:/Player/WalkRun
+  guid: 66affb94b063694b9ecd3f821b2e9f53
+  Banks:
+  - {fileID: -5818818210390581039}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3659339433746639228}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 320
 --- !u!114 &2993310423460286269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637363134906878372
+  lastModified: 637363052012248464
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -269,7 +358,95 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &4118092078776490408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoMusic1/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &5205506537428996926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Piano/PianoMusic1
+  m_EditorClassIdentifier: 
+  Path: event:/Piano/PianoMusic1
+  guid: 6287f6d3691b334c8973e099a3a58604
+  Banks:
+  - {fileID: -3044277188874227055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4118092078776490408}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56017
+--- !u!114 &5805213897408627509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/DefaultAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/DefaultAmbience
+  guid: 3168a267b0d9b24cae8da5cc9bce1bd4
+  Banks:
+  - {fileID: -8262268827800480930}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6141748117760341707}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 45598
 --- !u!114 &6006284479962057157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6141748117760341707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
