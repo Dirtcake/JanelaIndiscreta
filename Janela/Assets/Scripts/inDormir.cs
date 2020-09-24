@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class inDormir : inBase
 {
+    public GameObject assasino;
     void Start()
     {
         
@@ -17,5 +18,7 @@ public class inDormir : inBase
     public override void exclusivo()
     {
         // Tirar assasino
+        assasino.SetActive(false);
+        GameStatus.assasino = false;
     }
 }
