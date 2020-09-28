@@ -18,11 +18,15 @@ ScriptsOnlyBuild:
     - FMODUnity.PlatformWebGL
     - FMODUnity.PlatformWindows
     - FMODUnity.Settings
+    - FMODUnity.StudioEventEmitter
+    - FMODUnity.StudioListener
     - UnityStandardAssets.Characters.ThirdPerson.AICharacterControl
     - UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
     Assembly-CSharp.dll:
     - GameStatus
     - JanelaJ1
+    - Menuprincipal
+    - PlayerSoundsFMOD
     - Porta
     - TesteCamera
     - TesteInteracao
@@ -185,43 +189,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12206}
     - Class: 114
+      Script: {instanceID: 12236}
+    - Class: 114
       Script: {instanceID: 12372}
     - Class: 114
       Script: {instanceID: 12402}
     - Class: 114
       Script: {instanceID: 12562}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13022}
-    - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 13024}
     - Class: 114
       Script: {instanceID: 13048}
     - Class: 114
-      Script: {instanceID: 13454}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 13462}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13456}
     - Class: 114
-      Script: {instanceID: 14800}
+      Script: {instanceID: 13464}
     - Class: 114
-      Script: {instanceID: 15134}
+      Script: {instanceID: 13676}
     - Class: 114
-      Script: {instanceID: 15250}
+      Script: {instanceID: 14430}
     - Class: 114
-      Script: {instanceID: 15498}
+      Script: {instanceID: 14804}
     - Class: 114
-      Script: {instanceID: 15514}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15548}
+      Script: {instanceID: 15254}
     - Class: 114
-      Script: {instanceID: 15604}
+      Script: {instanceID: 15502}
     - Class: 114
-      Script: {instanceID: 15646}
+      Script: {instanceID: 15518}
     - Class: 114
-      Script: {instanceID: 15658}
+      Script: {instanceID: 15552}
+    - Class: 114
+      Script: {instanceID: 15608}
+    - Class: 114
+      Script: {instanceID: 15650}
+    - Class: 114
+      Script: {instanceID: 15662}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -276,6 +286,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 12562}
+    - Class: 114
+      Script: {instanceID: 15042}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
+    Assets/Scenes/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
       Script: {instanceID: 11452}
     - Class: 114
       Script: {instanceID: 11454}
@@ -289,6 +332,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11464}
     - Class: 114
       Script: {instanceID: 11466}
+    - Class: 114
+      Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11470}
     - Class: 114
@@ -320,65 +365,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 12918}
+      Script: {instanceID: 12842}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12920}
     - Class: 114
-      Script: {instanceID: 13164}
+      Script: {instanceID: 12984}
     - Class: 114
-      Script: {instanceID: 13216}
+      Script: {instanceID: 13166}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 13218}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13284}
     - Class: 114
-      Script: {instanceID: 13594}
+      Script: {instanceID: 13398}
     - Class: 114
-      Script: {instanceID: 13732}
+      Script: {instanceID: 13596}
     - Class: 114
-      Script: {instanceID: 14048}
+      Script: {instanceID: 13734}
     - Class: 114
-      Script: {instanceID: 14114}
+      Script: {instanceID: 14050}
     - Class: 114
-      Script: {instanceID: 14136}
+      Script: {instanceID: 14116}
     - Class: 114
-      Script: {instanceID: 14284}
+      Script: {instanceID: 14138}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 14286}
     - Class: 114
-      Script: {instanceID: 14324}
+      Script: {instanceID: 14318}
     - Class: 114
-      Script: {instanceID: 14388}
+      Script: {instanceID: 14326}
     - Class: 114
-      Script: {instanceID: 14664}
+      Script: {instanceID: 14390}
     - Class: 114
-      Script: {instanceID: 14738}
+      Script: {instanceID: 14668}
     - Class: 114
-      Script: {instanceID: 14760}
+      Script: {instanceID: 14742}
     - Class: 114
-      Script: {instanceID: 14780}
+      Script: {instanceID: 14764}
     - Class: 114
-      Script: {instanceID: 14898}
+      Script: {instanceID: 14784}
     - Class: 114
-      Script: {instanceID: 15004}
+      Script: {instanceID: 14902}
     - Class: 114
-      Script: {instanceID: 15038}
+      Script: {instanceID: 15008}
     - Class: 114
-      Script: {instanceID: 15200}
+      Script: {instanceID: 15204}
     - Class: 114
-      Script: {instanceID: 15252}
+      Script: {instanceID: 15256}
     - Class: 114
-      Script: {instanceID: 15466}
+      Script: {instanceID: 15470}
     - Class: 114
-      Script: {instanceID: 15468}
+      Script: {instanceID: 15472}
     - Class: 114
-      Script: {instanceID: 15526}
+      Script: {instanceID: 15502}
     - Class: 114
-      Script: {instanceID: 15596}
+      Script: {instanceID: 15530}
     - Class: 114
-      Script: {instanceID: 15664}
+      Script: {instanceID: 15600}
     - Class: 114
-      Script: {instanceID: 15670}
+      Script: {instanceID: 15668}
+    - Class: 114
+      Script: {instanceID: 15674}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -394,10 +441,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -990,6 +1033,12 @@ ScriptsOnlyBuild:
     className: AeroplaneAudio
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menuprincipal
+  - hash:
+      serializedVersion: 2
       Hash: 9452dc0dca800cf5f781114ef25a9a87
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Aeroplane
@@ -1218,7 +1267,7 @@ ScriptsOnlyBuild:
     className: Displace
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: e0c6c9b57a4811d0854707902d8a8524
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameStatus
@@ -1602,6 +1651,12 @@ ScriptsOnlyBuild:
     className: RenderObjects
   - hash:
       serializedVersion: 2
+      Hash: 56c3973ba83c66dc5c753610d510f5d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerSoundsFMOD
+  - hash:
+      serializedVersion: 2
       Hash: 577692d4ba2de48edb3832f41cecdc82
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1968,7 +2023,7 @@ ScriptsOnlyBuild:
     className: StudioBankLoader
   - hash:
       serializedVersion: 2
-      Hash: abd9fea82efa07d6dca59c9946f4c1ea
+      Hash: c85de0ba589f9673e5f63e66f8f3b15a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: inPiano
@@ -2070,6 +2125,7 @@ ScriptsOnlyBuild:
     className: AutoMobileShaderSwitch
   platform: 5
   scenePathNames:
+  - Assets/Scenes/Menu.unity
   - Assets/Scenes/Intro.unity
   - Assets/Scenes/Game.unity
-  playerPath: "C:/Users/happy/OneDrive/\xC1rea de Trabalho/BuildSegunran\xE7a/Janela.exe"
+  playerPath: D:/BUILD/v3/Janela.exe

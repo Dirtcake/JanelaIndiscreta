@@ -15,53 +15,45 @@ public class inPiano : inBase
     {
         PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
 
-        PianoMusic1.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
+        if (isMusicPlaying == true)
+        {
+            PianoMusic();
+        }
     }
 
     void Update()
     {
-        FMOD.Studio.PLAYBACK_STATE fmodPlayback;
-        PianoMusic1.getPlaybackState(out fmodPlayback);
-
-        if (fmodPlayback == FMOD.Studio.PLAYBACK_STATE.STOPPED && isMusicPlaying == true)
-        {
-            isMusicPlaying = false;
-            PianoMusic1.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        }
+        //FMOD.Studio.PLAYBACK_STATE fmodPlayback;
+        //PianoMusic1.getPlaybackState(out fmodPlayback);
     }
 
     public override void exclusivo()
     {
-        FMOD.Studio.PLAYBACK_STATE fmodPlayback;
-        PianoMusic1.getPlaybackState(out fmodPlayback);
+        //FMOD.Studio.PLAYBACK_STATE fmodPlayback;
+        //PianoMusic1.getPlaybackState(out fmodPlayback);
 
         // aparece o assasino e o observador
 
         if (GameStatus.assasino == true && GameStatus.pista == true )
         {
-            if (fmodPlayback != FMOD.Studio.PLAYBACK_STATE.PLAYING && isMusicPlaying == false)
-            {
-                isMusicPlaying = true;
-                PianoMusic1.start();
-            }
 
             perdestes.SetActive(true);
             Time.timeScale = 0;
+
+            PianoMusic();
 
         }
 
         else if (GameStatus.assasino == false && GameStatus.pista == true && GameStatus.observador == true)
         {
-            if (fmodPlayback == FMOD.Studio.PLAYBACK_STATE.STOPPED && isMusicPlaying == false)
-            {
-                isMusicPlaying = true;
-                PianoMusic1.start();
-            }
 
             ganhastes.SetActive(true);
             Time.timeScale = 0;
+
+            PianoMusic();
+
         }
 
         assasino.SetActive(true);
@@ -70,5 +62,19 @@ public class inPiano : inBase
         GameStatus.assasino = true;
         GameStatus.observador = true;
 
+    }
+
+    void PianoMusic()
+    {
+        if (isMusicPlaying == true)
+        {
+            PianoMusic1.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            isMusicPlaying = false;
+        }
+        else if (isMusicPlaying == false)
+        {
+            PianoMusic1.start();
+            isMusicPlaying = true;
+        }
     }
 }
