@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="ParameterPreset" id="{98e44630-781c-42de-836a-d7554ba323cf}">
 		<property name="name">
-			<value>Volume</value>
+			<value>AmbientVolume</value>
 		</property>
 		<relationship name="folder">
 			<destination>{e719dbdb-4992-4408-9861-63cdbfe98c60}</destination>
