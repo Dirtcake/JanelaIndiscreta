@@ -3,7 +3,22 @@ guid: 8725c8ec2667ce64e8d734a9cc955727
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box066Mat
+    second: {fileID: 2100000, guid: 4b6abfac806efad44bd7910ffe0d5d27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RoofMat
+    second: {fileID: 2100000, guid: 4b6abfac806efad44bd7910ffe0d5d27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: musicholderMat
+    second: {fileID: 2100000, guid: 4b6abfac806efad44bd7910ffe0d5d27, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
