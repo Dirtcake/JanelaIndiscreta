@@ -15,7 +15,7 @@ public class TesteCamera : MonoBehaviour
         Vector3 posicao = transform.position;
 
             posicao = Vector3.Lerp(transform.position, comodos[comodo], t);
-            print(posicao);
+            //print(posicao);
             transform.position = posicao;
        
     }

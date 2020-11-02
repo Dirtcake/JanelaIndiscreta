@@ -14,12 +14,18 @@ public class GameStatus : MonoBehaviour
 
     public static bool assasino = true;
     public static bool observador;
+
+    public static string targetAction;
+
+    public static GameObject Player;
     void Start()
     {
         pista = false;
         assasino = true;
         observador = false;
         Time.timeScale = 1;
+
+        Player = GameObject.Find("Player");
     }
 
     void Update()

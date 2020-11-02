@@ -18,7 +18,7 @@ public class JanelaJ1 : MonoBehaviour
     }
     public void OnTriggerStay(Collider other)
     {
-        print("pode apertar sem medo");
+        //print("pode apertar sem medo");
         if (Input.GetMouseButtonDown(2))
         {
             print("varias");

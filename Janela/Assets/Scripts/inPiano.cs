@@ -11,7 +11,7 @@ public class inPiano : inBase
     public GameObject assasino, observador,perdestes, ganhastes;
     public bool isMusicPlaying = false;
 
-    void Start()
+   /* void Start()
     {
         PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
 
@@ -27,7 +27,7 @@ public class inPiano : inBase
     {
         //FMOD.Studio.PLAYBACK_STATE fmodPlayback;
         //PianoMusic1.getPlaybackState(out fmodPlayback);
-    }
+    }*/
 
     public override void exclusivo()
     {
@@ -35,6 +35,8 @@ public class inPiano : inBase
         //PianoMusic1.getPlaybackState(out fmodPlayback);
 
         // aparece o assasino e o observador
+
+        distance = 1.9f;
 
         if (GameStatus.assasino == true && GameStatus.pista == true )
         {

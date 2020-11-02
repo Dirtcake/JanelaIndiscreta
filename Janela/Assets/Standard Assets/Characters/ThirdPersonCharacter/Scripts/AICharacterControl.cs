@@ -37,6 +37,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     {
                         obj.acao();
                     }
+                    else GameStatus.targetAction = null;
                     target.position = hit.point;
                 }
             }

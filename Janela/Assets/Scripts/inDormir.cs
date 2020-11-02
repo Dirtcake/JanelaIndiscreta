@@ -5,15 +5,6 @@ using UnityEngine;
 public class inDormir : inBase
 {
     public GameObject assasino;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public override void exclusivo()
     {
