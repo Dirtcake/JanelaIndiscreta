@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: b8b8c94e0d1868147acc699cd7fab973
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5351039483284311670
+    second: olhos_0
+  - first:
+      213: 1538503349476695284
+    second: olhos_1
+  - first:
+      213: -2747207431870808174
+    second: olhos_2
+  - first:
+      213: 8708790845317386192
+    second: olhos_3
+  - first:
+      213: -4210186625793807563
+    second: olhos_4
+  - first:
+      213: -6245191633910241084
+    second: olhos_5
+  - first:
+      213: 7124093047240782512
+    second: olhos_6
+  - first:
+      213: 3005551743465247352
+    second: olhos_7
+  - first:
+      213: 8803664933274556940
+    second: olhos_8
+  - first:
+      213: -7801194517693057231
+    second: olhos_9
+  - first:
+      213: -1487678759875389323
+    second: olhos_10
+  - first:
+      213: 110799869981490500
+    second: olhos_11
+  - first:
+      213: -5001752335386281270
+    second: olhos_12
+  - first:
+      213: -3416666904564552864
+    second: olhos_13
+  - first:
+      213: -2214434141729150943
+    second: olhos_14
+  - first:
+      213: -3172041954287486348
+    second: olhos_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,11 +157,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: olhos_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 72
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81bfb3e0f94db5b0800000000000000
+      internalID: -5351039483284311670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olhos_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 74
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc9e4f15acd95510800000000000000
+      internalID: 1538503349476695284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olhos_2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 0
+        width: 75
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ff6036565ffd9d0800000000000000
+      internalID: -2747207431870808174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olhos_3
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 0
+        width: 75
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df0156f127dbd870800000000000000
+      internalID: 8708790845317386192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 44eaa283516e8fc408687ece78a3f39e
     internalID: 0
     vertices: []
     indices: 

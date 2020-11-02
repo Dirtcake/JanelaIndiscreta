@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 7513894146f440344957b08cb6db71a5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3011004150607380004
+    second: Calendario_Dias_0
+  - first:
+      213: -7665501226039572319
+    second: Calendario_Dias_1
+  - first:
+      213: -8478180660658946612
+    second: Calendario_Dias_2
+  - first:
+      213: -9069560961635533550
+    second: Calendario_Dias_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,11 +121,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Calendario_Dias_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 566
+        width: 669
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd102d19da3c636d0800000000000000
+      internalID: -3011004150607380004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calendario_Dias_1
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 571
+        width: 669
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8079c9f3bae9590800000000000000
+      internalID: -7665501226039572319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calendario_Dias_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 47
+        width: 669
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd36d3cb93775a80800000000000000
+      internalID: -8478180660658946612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calendario_Dias_3
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 47
+        width: 669
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21db6f4ab52722280800000000000000
+      internalID: -9069560961635533550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 200227c5985647046bd91b0e3b6b140c
     internalID: 0
     vertices: []
     indices: 

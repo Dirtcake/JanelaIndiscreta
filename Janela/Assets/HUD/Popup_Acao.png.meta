@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 1180ad2bdd7cc2d4699444427515a185
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -188636644097029912
+    second: Popup_Acao_0
+  - first:
+      213: 2703819330124077923
+    second: Popup_Acao_1
+  - first:
+      213: -4388912148956832255
+    second: Popup_Acao_2
+  - first:
+      213: 8676904753000929153
+    second: Popup_Acao_3
+  - first:
+      213: -8502852313165605297
+    second: Popup_Acao_4
+  - first:
+      213: -3012165014665325817
+    second: Popup_Acao_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +127,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Popup_Acao_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 308
+        width: 169
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e889fcb8f3d16df0800000000000000
+      internalID: -188636644097029912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popup_Acao_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 278
+        width: 169
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b51e4fa55e58520800000000000000
+      internalID: 2703819330124077923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popup_Acao_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 248
+        width: 169
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e180b67a37713c0800000000000000
+      internalID: -4388912148956832255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popup_Acao_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187d48096ee8a6870800000000000000
+      internalID: 8676904753000929153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popup_Acao_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 111
+        width: 227
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46d7280fdccff980800000000000000
+      internalID: -8502852313165605297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popup_Acao_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 203
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7039308d0e3a236d0800000000000000
+      internalID: -3012165014665325817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
