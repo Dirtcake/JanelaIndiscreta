@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{fb4986d3-533f-4a31-9ca1-e834e83a985c}">
+		<property name="assetPath">
+			<value>Interactions/Door/Open/opening-door-3-www.FesliyanStudios.com.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1120000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cdfc130-d226-49fe-914a-d68da277d8f7}</destination>
+		</relationship>
+	</object>
+</objects>

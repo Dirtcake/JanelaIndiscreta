@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c8f8bba7-2b91-4c90-869c-93c4c04db101}">
+		<property name="assetPath">
+			<value>Interactions/Paper/shuffing_paper_05.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.59925170068027211</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cdfc130-d226-49fe-914a-d68da277d8f7}</destination>
+		</relationship>
+	</object>
+</objects>

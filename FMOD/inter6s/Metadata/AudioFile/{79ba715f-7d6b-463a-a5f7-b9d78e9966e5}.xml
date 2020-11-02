@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{79ba715f-7d6b-463a-a5f7-b9d78e9966e5}">
+		<property name="assetPath">
+			<value>Interactions/Drawer/drawer_open_05.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.8501133786848072</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8cdfc130-d226-49fe-914a-d68da277d8f7}</destination>
+		</relationship>
+	</object>
+</objects>

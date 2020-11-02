@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{45f79084-ab2d-4656-998d-041e8290418b}">
+		<property name="name">
+			<value>OpenFaucet</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e719dbdb-4992-4408-9861-63cdbfe98c60}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{46d57d43-2d33-4ab0-b92e-0137f869a74c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{46d57d43-2d33-4ab0-b92e-0137f869a74c}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Open</value>
+			<value>Close</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

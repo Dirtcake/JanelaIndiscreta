@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{abb5e72d-f580-4cfb-b004-63942e243299}">
+		<property name="name">
+			<value>PhoneInteraction</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e719dbdb-4992-4408-9861-63cdbfe98c60}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{eb75f983-9120-413e-a157-9ebf403fefbb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{eb75f983-9120-413e-a157-9ebf403fefbb}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>PickUp</value>
+			<value>PutDown</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
