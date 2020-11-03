@@ -25,14 +25,26 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
+
                 // Criar raycast para determinar o target do personagem e atribuir a variavel target
                 RaycastHit hit;
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
                     iInteragivel obj = hit.collider.GetComponent<iInteragivel>();
+                if (obj != null)
+                {
+                    GameStatus.interacaoHUD.transform.GetChild(0).gameObject.SetActive(true);
+                    GameStatus.cursores.SetActive(false);
+                }
+                else
+                {
+                    GameStatus.interacaoHUD.transform.GetChild(0).gameObject.SetActive(false);
+                    GameStatus.cursores.SetActive(true);
+                }
+
+                if (Input.GetMouseButtonDown(0))
+                {
                     if (obj != null)
                     {
                         obj.acao();
