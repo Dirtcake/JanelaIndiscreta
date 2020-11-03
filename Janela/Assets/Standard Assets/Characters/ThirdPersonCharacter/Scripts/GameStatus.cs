@@ -11,16 +11,14 @@ public class GameStatus : MonoBehaviour
 
 
     public static bool pista = false;
-
     public static bool assasino = true;
     public static bool observador;
 
     public static string targetAction;
 
-    public static GameObject Player;
-
     public static int tempo;
 
+    public static GameObject Player;
     public static GameObject cursores;
     public static GameObject interacaoHUD;
     void Start()
@@ -40,6 +38,7 @@ public class GameStatus : MonoBehaviour
 
     void Update()
     {
+        #region Cursores
         cursores.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         interacaoHUD.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
 
@@ -55,6 +54,7 @@ public class GameStatus : MonoBehaviour
             cursores.transform.GetChild(1).gameObject.SetActive(false);
             cursores.transform.GetChild(0).gameObject.SetActive(true);
         }
+        #endregion
     }
 
     public void restartScene()
