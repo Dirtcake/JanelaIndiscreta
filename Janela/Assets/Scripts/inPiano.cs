@@ -11,23 +11,28 @@ public class inPiano : inBase
     public GameObject assasino, observador,perdestes, ganhastes;
     public bool isMusicPlaying = false;
 
-   /* void Start()
+    /* void Start()
+     {
+         PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
+
+         FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
+         if (isMusicPlaying == true)
+         {
+             PianoMusic();
+         }
+     }
+
+     void Update()
+     {
+         //FMOD.Studio.PLAYBACK_STATE fmodPlayback;
+         //PianoMusic1.getPlaybackState(out fmodPlayback);
+     }*/
+
+    public override void startCapsule()
     {
-        PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
-
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());
-
-        if (isMusicPlaying == true)
-        {
-            PianoMusic();
-        }
+        distance = 2.2f;
     }
-
-    void Update()
-    {
-        //FMOD.Studio.PLAYBACK_STATE fmodPlayback;
-        //PianoMusic1.getPlaybackState(out fmodPlayback);
-    }*/
 
     public override void exclusivo()
     {
@@ -36,7 +41,6 @@ public class inPiano : inBase
 
         // aparece o assasino e o observador
 
-        distance = 1.9f;
 
         if (GameStatus.assasino == true && GameStatus.pista == true )
         {
@@ -63,6 +67,8 @@ public class inPiano : inBase
 
         GameStatus.assasino = true;
         GameStatus.observador = true;
+
+
 
     }
 

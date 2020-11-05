@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0403eafc4e403934290414269adfd9fd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cosmic
+  fontNames:
+  - Cosmic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 605d46dd57cf75743b051dd91901bca4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

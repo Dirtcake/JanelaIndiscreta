@@ -10,19 +10,29 @@ public class GameStatus : MonoBehaviour
     FMOD.Studio.EventInstance PianoMusic1;
 
 
-    public static bool pista = false;
-    public static bool assasino = true;
-    public static bool observador;
+    public static bool pista = false;       // J1
+    public static bool assasino = true;     // J1
+    public static bool observador;          // J1
 
-    public static string targetAction;
+    public static string targetAction;      // Nome da ação a ser executada
 
-    public static int tempo;
+    public static int tempo;                // Tempo do jogo, em segundos
+    public static int partituras;           // Numero de partituras do jogador
+    public static int nivelSuspeita;        // Nivel de suspeita
 
     public static GameObject Player;
     public static GameObject cursores;
     public static GameObject interacaoHUD;
+    public static GameObject FeedBackConclusao;
+
+    
+
+    public static bool PlayerMovement = true;   // bool para travamento do movimento do personagem
     void Start()
     {
+        FeedBackConclusao = GameObject.Find("FeedBackConclusao");
+        FeedBackConclusao.SetActive(false);
+
         Cursor.visible = false;
 
         pista = false;
@@ -33,7 +43,6 @@ public class GameStatus : MonoBehaviour
         Player = GameObject.Find("Player");
         interacaoHUD = GameObject.Find("Interacoes");
         cursores = GameObject.Find("Cursores");
-
     }
 
     void Update()

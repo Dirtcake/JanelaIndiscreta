@@ -43,7 +43,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     GameStatus.cursores.SetActive(true);
                 }
 
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && GameStatus.PlayerMovement == true)
                 {
                     if (obj != null)
                     {
