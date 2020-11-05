@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class inPiano : inBase
 {
@@ -36,8 +37,9 @@ public class inPiano : inBase
 
     public override void exclusivo()
     {
-        //FMOD.Studio.PLAYBACK_STATE fmodPlayback;
-        //PianoMusic1.getPlaybackState(out fmodPlayback);
+        PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
+
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());     
 
         // aparece o assasino e o observador
 
@@ -48,7 +50,7 @@ public class inPiano : inBase
             perdestes.SetActive(true);
             Time.timeScale = 0;
 
-            PianoMusic();
+                PianoMusic();
 
         }
 
@@ -58,7 +60,7 @@ public class inPiano : inBase
             ganhastes.SetActive(true);
             Time.timeScale = 0;
 
-            PianoMusic();
+                PianoMusic();
 
         }
 
@@ -72,17 +74,23 @@ public class inPiano : inBase
 
     }
 
+    public class FmodExtensions
+    {
+        public static bool IsPlaying(FMOD.Studio.EventInstance instance)
+        {
+            FMOD.Studio.PLAYBACK_STATE state;
+            instance.getPlaybackState(out state);
+            return state != FMOD.Studio.PLAYBACK_STATE.STOPPED;
+        }
+    }
+
     void PianoMusic()
     {
-        if (isMusicPlaying == true)
-        {
-            PianoMusic1.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            isMusicPlaying = false;
-        }
-        else if (isMusicPlaying == false)
+        if (isMusicPlaying == false)
         {
             PianoMusic1.start();
             isMusicPlaying = true;
         }
+        else if (isMusicPlaying == true && FmodExtensions.IsPlaying(PianoMusic1)) isMusicPlaying = false;
     }
 }

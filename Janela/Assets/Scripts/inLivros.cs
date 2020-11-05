@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class inLivros : inBase
 {
+    [FMODUnity.EventRef]
+    public string LivrosInt;
+    FMOD.Studio.EventInstance eBook;
+
     private int level = 1;
     public override void exclusivo()
     {
+        // Setar emiter do som
+        eBook = FMODUnity.RuntimeManager.CreateInstance(LivrosInt);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(eBook, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
+        // Play no som
+        eBook.start();
+
         switch (level)
         {
             case 1:
