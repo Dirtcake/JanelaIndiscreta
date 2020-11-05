@@ -40,16 +40,16 @@ public class Period : MonoBehaviour
 
         #region tempo
 
-        if (GameStatus.tempo <= 60)
+        if (GameStatus.tempo <= 300)
             dia = horarios.manha;
 
-        if (GameStatus.tempo >= 61 && GameStatus.tempo <= 120)
+        if (GameStatus.tempo >= 301 && GameStatus.tempo <= 600)
             dia = horarios.tarde;
 
-        if (GameStatus.tempo >= 121 && GameStatus.tempo <= 180)
+        if (GameStatus.tempo >= 601 && GameStatus.tempo <= 900)
             dia = horarios.noite;
 
-        if (GameStatus.tempo >= 181)
+        if (GameStatus.tempo >= 901)
             GameStatus.tempo = 0;
 
         #endregion

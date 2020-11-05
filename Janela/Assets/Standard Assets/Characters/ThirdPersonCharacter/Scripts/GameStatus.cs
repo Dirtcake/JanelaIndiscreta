@@ -68,6 +68,8 @@ public class GameStatus : MonoBehaviour
 
     public void restartScene()
     {
+        SceneManager.LoadScene("Game");
+
         FMOD.Studio.PLAYBACK_STATE fmodPlayback;
         PianoMusic1.getPlaybackState(out fmodPlayback);
 
@@ -76,6 +78,6 @@ public class GameStatus : MonoBehaviour
             PianoMusic1.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
 
-        SceneManager.LoadScene("Game");
+        
     }
 }

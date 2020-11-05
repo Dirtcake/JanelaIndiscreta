@@ -10,6 +10,7 @@ TagManager:
   - sala
   - salaE
   - banheiro
+  - janela
   layers:
   - Default
   - TransparentFX
