@@ -17,22 +17,25 @@ public class cameraLocal : MonoBehaviour
     }
     public comodos casa;
 
+    public void Start()
+    {
+        
+    }
     private void Update()
     {
         if(Camera.main.transform.position == janelaV)
         {
-            if(Input.GetKeyDown("escape")) Camera.main.transform.position = salaV;
+            if(Input.GetKeyDown(KeyCode.Escape))
+                Camera.main.transform.position = salaV;
         }
 
         switch (casa)
         {
             case comodos.sala:
                 Camera.main.transform.position = salaV;
-                //print("sala");
                 break;
             case comodos.salaExtremo:
                 Camera.main.transform.position = salaEV;
-                //print("salaE");
                 break;
             case comodos.cozinha:
                 Camera.main.transform.position = cozinhaV;
@@ -50,26 +53,6 @@ public class cameraLocal : MonoBehaviour
         }
 
        
-    }
-    void OntriggerEnter(Collider other)
-    {
-        print(other.name);
-
-        if (other.gameObject.CompareTag("salaE"))
-            casa = comodos.salaExtremo;
-
-        if (other.gameObject.CompareTag("cozinha"))
-            casa = comodos.cozinha;
-
-        if (other.gameObject.CompareTag("banheiro"))
-            casa = comodos.banheiro;
-
-        if (other.gameObject.CompareTag("quarto"))
-            casa = comodos.quarto;
-
-        if (other.gameObject.CompareTag("sala"))
-            casa = comodos.sala;
-
     }
     private void OnCollisionEnter(Collision collision)
     {
