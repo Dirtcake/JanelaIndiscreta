@@ -10,13 +10,6 @@ public class Porta : MonoBehaviour
 
 
 
-    public void OnTriggerStay(Collider other)
-    {
-        TesteCamera.comodo = 1;
-    }
-    public void OnTriggerExit(Collider other)
-    {
-        TesteCamera.comodo = 0;
-    }
+
 }
 

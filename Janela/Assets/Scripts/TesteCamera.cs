@@ -6,17 +6,58 @@ using UnityEngine.EventSystems;
 
 public class TesteCamera : MonoBehaviour
 {
-    public static int comodo;
-    public Vector3[] comodos;
-
-    public float t;
-    void Update()
+    public Vector3 salaV, salaEV, cozinhaV, banheiroV, quartoV;
+    public GameObject salaC, salaEC, cozinhaC, banheiroC, quartoC;
+    public enum comodos
     {
-        Vector3 posicao = transform.position;
+        sala,
+        salaExtremo,
+        cozinha,
+        banheiro,
+        quarto
+    }
+    public comodos casa;
 
-            posicao = Vector3.Lerp(transform.position, comodos[comodo], t);
-            //print(posicao);
-            transform.position = posicao;
-       
+    private void Update()
+    {
+
+        switch (casa)
+        {
+            case comodos.sala:
+                transform.position = salaV;
+                break;
+            case comodos.salaExtremo:
+                transform.position = salaEV;
+                break;
+            case comodos.cozinha:
+                transform.position = cozinhaV;
+                break;
+            case comodos.banheiro:
+                transform.position = banheiroV;
+                break;
+            case comodos.quarto:
+                transform.position = quartoV;
+                break;
+
+        }
+
+        void OntriggerEnter(Collider col)
+        {
+            if (col.gameObject.CompareTag("salaE"))
+                casa = comodos.salaExtremo;
+
+            if (col.gameObject.CompareTag("cozinha"))
+                casa = comodos.cozinha;
+
+            if (col.gameObject.CompareTag("banheiro"))
+                casa = comodos.banheiro;
+
+            if (col.gameObject.CompareTag("quarto"))
+                casa = comodos.quarto;
+
+            if (col.gameObject.CompareTag("sala"))
+                casa = comodos.sala;
+
+        }
     }
 }

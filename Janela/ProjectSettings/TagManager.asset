@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - UI
+  - quarto
+  - cozinha
+  - sala
+  - salaE
+  - banheiro
   layers:
   - Default
   - TransparentFX

@@ -2,14 +2,12 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20104 (111454), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=8, nSamplesPerSec=48000, nAvgBytesPerSec=1536000, nBlockAlign=32, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x0000063F, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 7, input speaker mode 3
-[LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000021CA8D20878 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001F9A9FED038 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,12 +17,112 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = ..\FMOD\inter6s\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001FA51D312F8 : node = 000001F9ABF05850
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F9489E2D78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA51D312F8
+[LOG] SystemI::createSoundInternal             :     Create name='..\FMOD\inter6s\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13500320
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 154464
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F9ABF05960
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Birds Forest Quiet Wind Loop NR', format=5, channels=2, frequency=48000, lengthbytes=652384, lengthpcm=2687915, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.026052.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA51D312F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA51D31D18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA51D31D18
+[LOG] SoundI::release                          : Night-insect-sounds (000001F9AA0DC208)
+[LOG] SoundI::release                          :     Night-insect-sounds (000001FA573A2718)
+[LOG] SoundI::release                          :     Night-insect-sounds (000001FA51D303C8)
+[LOG] SoundI::release                          : Empty-city-sound-effect (000001FA571FA708)
+[LOG] SoundI::release                          :     Empty-city-sound-effect (000001FA5739F318)
+[LOG] SoundI::release                          :     Empty-city-sound-effect (000001FA51D30DE8)
+[LOG] SoundI::release                          : Birds Forest Quiet Wind Loop NR (000001F98F4CDCE8)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000001FA573A23D8)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000001FA51FCA148)
+[LOG] SoundI::release                          :  (000001F9AAC24D98)
+[LOG] SoundI::release                          :     car1 (000001FA57388DA8)
+[LOG] SoundI::release                          :  (000001F9AAC24218)
+[LOG] SoundI::release                          :     car2 (000001F9AEA13DA8)
+[LOG] SoundI::release                          :  (000001FA56DA0768)
+[LOG] SoundI::release                          :     car3 (000001FA571F8628)
+[LOG] SoundI::release                          :  (000001F9AAC24388)
+[LOG] SoundI::release                          :     car4 (000001FA573895C8)
+[LOG] SoundI::release                          : Birds Forest Quiet Wind Loop NR (000001FA51D312F8)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000001F9AD06F3B8)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000001FA51D31D18)
+[LOG] SoundI::release                          : Small-Room-Hiss-Tone-www.fesliyanstudios.com (000001F98F4CD478)
+[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (000001FA573A01B8)
+[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (000001F9AA0DCC28)
+[LOG] SoundI::release                          : balck-background-v (000001F9AA6BD7F8)
+[LOG] SoundI::release                          :     balck-background-v (000001FA573A2578)
+[LOG] SoundI::release                          :     balck-background-v (000001FA51FCA658)
+[LOG] SoundI::release                          : clock_tic_tac_loop_20s_01 (000001FA51FC9578)
+[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (000001FA573A1BB8)
+[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (000001FA51FC9F98)
+[LOG] SoundI::release                          :  (000001FA56DA1178)
+[LOG] SoundI::release                          :     dogs1 (000001FA571F8148)
+[LOG] SoundI::release                          :  (000001F9ABDD6468)
+[LOG] SoundI::release                          :     dogs10 (000001F9AEA13588)
+[LOG] SoundI::release                          :  (000001F9AAC24C28)
+[LOG] SoundI::release                          :     dogs11 (000001FA57388A68)
+[LOG] SoundI::release                          :  (000001F9AAC24948)
+[LOG] SoundI::release                          :     dogs12 (000001FA573890E8)
+[LOG] SoundI::release                          :  (000001F9ABDD7758)
+[LOG] SoundI::release                          :     dogs13 (000001FA571F82E8)
+[LOG] SoundI::release                          :  (000001FA56DA1458)
+[LOG] SoundI::release                          :     dogs14 (000001FA571F7448)
+[LOG] SoundI::release                          :  (000001F9ABDD7308)
+[LOG] SoundI::release                          :     dogs2 (000001FA56DA4E18)
+[LOG] SoundI::release                          :  (000001F9ABDD7BA8)
+[LOG] SoundI::release                          :     dogs3 (000001FA571F8CA8)
+[LOG] SoundI::release                          :  (000001F9ABDD7028)
+[LOG] SoundI::release                          :     dogs4 (000001FA56DA4FB8)
+[LOG] SoundI::release                          :  (000001FA56DA1008)
+[LOG] SoundI::release                          :     dogs5 (000001FA571F7C68)
+[LOG] SoundI::release                          :  (000001F9ABDD7478)
+[LOG] SoundI::release                          :     dogs6 (000001FA571F7FA8)
+[LOG] SoundI::release                          :  (000001F9AAC247D8)
+[LOG] SoundI::release                          :     dogs7 (000001F9AEA13C08)
+[LOG] SoundI::release                          :  (000001FA56DA12E8)
+[LOG] SoundI::release                          :     dogs8 (000001FA571F8B08)
+[LOG] SoundI::release                          :  (000001FA56DA0E98)
+[LOG] SoundI::release                          :     dogs9 (000001FA571F8E48)
+[LOG] SoundI::release                          :  (000001F9AAC24668)
+[LOG] SoundI::release                          :     birds1 (000001F9AEA13A68)
+[LOG] SoundI::release                          :  (000001F9ABDD6188)
+[LOG] SoundI::release                          :     birds10 (000001F9AEA138C8)
+[LOG] SoundI::release                          :  (000001F9ABDD7198)
+[LOG] SoundI::release                          :     birds2 (000001FA56DA4C78)
+[LOG] SoundI::release                          :  (000001F9ABDD68B8)
+[LOG] SoundI::release                          :     birds3 (000001F9AEA130A8)
+[LOG] SoundI::release                          :  (000001F9ABDD7A38)
+[LOG] SoundI::release                          :     birds4 (000001FA571F72A8)
+[LOG] SoundI::release                          :  (000001F9AAC24AB8)
+[LOG] SoundI::release                          :     birds5 (000001FA57388C08)
+[LOG] SoundI::release                          :  (000001F9ABDD78C8)
+[LOG] SoundI::release                          :     birds6 (000001FA571F75E8)
+[LOG] SoundI::release                          :  (000001F9AAC244F8)
+[LOG] SoundI::release                          :     birds7 (000001FA573888C8)
+[LOG] SoundI::release                          :  (000001F9ABDD6D08)
+[LOG] SoundI::release                          :     birds8 (000001F9AEA13248)
+[LOG] SoundI::release                          :  (000001F9ABDD6B98)
+[LOG] SoundI::release                          :     birds9 (000001F9AEA133E8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -32,3 +130,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
