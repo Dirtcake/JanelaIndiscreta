@@ -8,9 +8,18 @@ public class inPartitura : inBase
     public string PartituraInt;
     FMOD.Studio.EventInstance eCifraClub; //sim eu fiz uma piadoca haha humor e piadas
 
+    public GameObject partituraHUD;
+
+    public bool partitura;
+
     public override void exclusivo()
     {
-        GameStatus.partituras++;
+        if (partitura)
+        {
+            GameStatus.partituras++;
+            partituraHUD.SetActive(true);
+            partitura = false;
+        }
 
         // Setar emiter do som
         eCifraClub = FMODUnity.RuntimeManager.CreateInstance(PartituraInt);
@@ -18,5 +27,6 @@ public class inPartitura : inBase
 
         // Play no som
         eCifraClub.start();
+
     }
 }

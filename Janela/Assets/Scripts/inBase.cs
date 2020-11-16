@@ -6,11 +6,15 @@ using UnityEngine.UI;
 public class inBase : MonoBehaviour,iInteragivel
 {
     public string actionName = "Alterar no InBase";
-    public bool On = false;
 
     protected float distance = 1.5f;
+    public float nivelPista;            // Nivel em que pista se encontra
 
     protected bool StatusPista;         // Amazena se a pista está feita ou não
+    public bool On = false;
+    public bool interagindo;            // Indica se o jogador está fazendo a pista ou não
+
+
 
     void Start()
     {
@@ -19,11 +23,14 @@ public class inBase : MonoBehaviour,iInteragivel
 
     void Update()
     {
+        //print(GameStatus.targetAction);
+
+
         updateCapsule();
         if (On)
         {
             //print(Vector3.Distance(GameStatus.Player.transform.position, transform.position));
-            print(GameStatus.targetAction);
+            //print(GameStatus.targetAction);
 
             if (GameStatus.targetAction == null) On = false;
 

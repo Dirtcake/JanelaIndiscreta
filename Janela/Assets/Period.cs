@@ -18,6 +18,7 @@ public class Period : MonoBehaviour
     {
 
         contador += Time.deltaTime;
+
         if (contador >= 1)
         {
             GameStatus.tempo += 1;

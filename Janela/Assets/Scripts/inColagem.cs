@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class inColagem : inBase
 {
@@ -15,7 +16,28 @@ public class inColagem : inBase
     public Material materialColagem;
     public GameObject quadroUm, quadroDois;
 
+    public GameObject JanelaCam;
+    public GameObject niveis;
+
     private int level = 1;
+
+    public override void updateCapsule()
+    {
+        if (JanelaCam.active == true && GameStatus.targetAction == actionName)
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                interagindo = true;
+                nivelPista += 1 * Time.deltaTime;
+                niveis.transform.GetChild(0).GetComponent<Slider>().value = nivelPista;
+
+            }
+            else
+            {
+                interagindo = false;
+            }
+        }
+    }
     public override void exclusivo()
     {
         /* // trocar imagens dos quadros
@@ -35,6 +57,10 @@ public class inColagem : inBase
         ePainting2.start();
 
         GameStatus.pista = true;
+
+        JanelaCam.SetActive(true);
+        niveis.SetActive(true);
+        niveis.transform.GetChild(0).gameObject.SetActive(true);
 
         switch (level)
         {

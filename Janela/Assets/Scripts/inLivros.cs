@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class inLivros : inBase
 {
@@ -9,6 +10,28 @@ public class inLivros : inBase
     FMOD.Studio.EventInstance eBook;
 
     private int level = 1;
+
+    public GameObject JanelaCam;
+    public GameObject niveis;
+
+    public override void updateCapsule()
+    {
+        if (JanelaCam.active == true && GameStatus.targetAction == actionName)
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                interagindo = true;
+                nivelPista += 1 * Time.deltaTime;
+                niveis.transform.GetChild(1).GetComponent<Slider>().value = nivelPista;
+
+            }
+            else
+            {
+                interagindo = false;
+            }
+        }
+    }
+
     public override void exclusivo()
     {
         // Setar emiter do som
@@ -17,6 +40,10 @@ public class inLivros : inBase
 
         // Play no som
         eBook.start();
+
+        JanelaCam.SetActive(true);
+        niveis.SetActive(true);
+        niveis.transform.GetChild(1).gameObject.SetActive(true);
 
         switch (level)
         {

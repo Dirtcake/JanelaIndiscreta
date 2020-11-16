@@ -19,6 +19,7 @@ public class GameStatus : MonoBehaviour
 
     public static int tempo;                // Tempo do jogo, em segundos
     public static int partituras;           // Numero de partituras do jogador
+    public static int dia;                  // Numero de dias
 
     public static float nivelSuspeita;        // Nivel de suspeita
 
@@ -75,8 +76,6 @@ public class GameStatus : MonoBehaviour
          O nivel de suspeita trabalha com baseno Alpha da hud "Observado_Dano", 255 no maximo e cada nivel de suspeita é 85.
          */
         nivelSuspeita = Mathf.Clamp(nivelSuspeita + 0.05f * Time.deltaTime, 0, 1);
-
-        print(nivelSuspeita);
 
         Color c = HUDSuspeita.color;
         c.a = nivelSuspeita;
