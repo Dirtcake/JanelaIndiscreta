@@ -56,7 +56,7 @@ public class cameraLocal : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        print("a");
+        //print("a");
 
         if (collision.gameObject.CompareTag("salaE"))
             casa = comodos.salaExtremo;

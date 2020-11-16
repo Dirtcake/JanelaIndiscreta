@@ -21,7 +21,7 @@ public class Period : MonoBehaviour
         if (contador >= 1)
         {
             GameStatus.tempo += 1;
-            Debug.Log("acrescentou " + GameStatus.tempo);
+            //Debug.Log("acrescentou " + GameStatus.tempo);
             contador = 0;
         }
 

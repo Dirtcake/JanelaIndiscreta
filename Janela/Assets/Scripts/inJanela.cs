@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class inJanela : inBase
 {
-    void Start()
+    public GameObject JanelaCam;
+    public override void startCapsule()
     {
-        
+        distance = 2;
     }
 
-    void Update()
+    public override void updateCapsule()
     {
-        
     }
-
     public override void exclusivo()
     {
-        //Trocar imagem pra janela
+        JanelaCam.SetActive(true);
     }
 }
