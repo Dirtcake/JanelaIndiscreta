@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Close : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))
         {
+            GameStatus.PlayerMovement = true;
             gameObject.SetActive(false);
         }
     }

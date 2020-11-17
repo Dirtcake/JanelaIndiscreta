@@ -18,6 +18,7 @@ public class inPartitura : inBase
         {
             GameStatus.partituras++;
             partituraHUD.SetActive(true);
+            GameStatus.PlayerMovement = false;
             partitura = false;
         }
 
