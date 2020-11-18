@@ -6,6 +6,9 @@ public class Period : MonoBehaviour
 {
     public Vector3 amanhecer, por, anoitecer;
     float contador;
+
+
+    public GameObject transicao;
     public enum horarios
     {
         manha,
@@ -51,8 +54,11 @@ public class Period : MonoBehaviour
             dia = horarios.noite;
 
         if (GameStatus.tempo >= 901)
+        {
             GameStatus.tempo = 0;
-
-        #endregion
+            GameStatus.dia++;
+            transicao.SetActive(true);
+        }
     }
+    #endregion
 }

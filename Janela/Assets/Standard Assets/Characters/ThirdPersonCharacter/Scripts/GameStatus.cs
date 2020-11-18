@@ -143,6 +143,7 @@ public class GameStatus : MonoBehaviour
         
     }
 
+
     // Utilitarios
     public bool IsBetween(float p, float minValue, float maxValue)
     {
