@@ -100,7 +100,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8887568705994770603}
+  - {fileID: -6320385188582572963}
   MinDistance: 1
   MaxDistance: 20
   Length: 1992
@@ -275,6 +275,26 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/ClosetDoorClose/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-8890567933716793868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DrawerClose/AmbientVolume
   m_EditorClassIdentifier: 
   Name: AmbientVolume
   Min: 0
@@ -848,6 +868,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-8247502778769500812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ScorePickUp/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8209635875570189975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,7 +1208,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 446062697413091198}
+  - {fileID: -457709682093564477}
   MinDistance: 1
   MaxDistance: 20
   Length: 4511
@@ -1292,6 +1332,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-7662441803991583013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WashDishes/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7658023403297820354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,6 +1512,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-7465303404794117578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoMusicPH/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7408802625967909083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1592,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-7370264150721090535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WalkRun/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7296496435044793352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,6 +1645,26 @@ MonoBehaviour:
   m_Name: parameter:/DefaultAmbience3D/aVolume
   m_EditorClassIdentifier: 
   Name: aVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-7291091191686986191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoorOpen/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
   Min: 0
   Max: 100
   Default: 100
@@ -1772,6 +1892,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-6669682795110393003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ShowerCurtainOpen/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-6599899801605344759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1972,6 +2112,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-6320385188582572963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Books/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-6311612613163633584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2165,6 +2325,26 @@ MonoBehaviour:
   m_Name: parameter:/ShowerCurtainOpen/AmbientVolume
   m_EditorClassIdentifier: 
   Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-5936322243898805989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience/extraVolume
+  m_EditorClassIdentifier: 
+  Name: extraVolume
   Min: 0
   Max: 100
   Default: 100
@@ -2532,7 +2712,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -7620927768582271932}
+  - {fileID: -6669682795110393003}
   MinDistance: 1
   MaxDistance: 20
   Length: 2376
@@ -2650,7 +2830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Ambience.bank
   Name: Ambience
-  lastModified: 637402463314400268
+  lastModified: 637402061750325332
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2768,7 +2948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/ScenarioInteractions.bank
   Name: ScenarioInteractions
-  lastModified: 637402354428662494
+  lastModified: 637402061753295034
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2912,10 +3092,10 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7291944612806958800}
-  - {fileID: 7732138182059002420}
-  - {fileID: 7745466170081621354}
-  - {fileID: -2564579184823979794}
+  - {fileID: 1323263265415242059}
+  - {fileID: -4230792934942905434}
+  - {fileID: 1331726941232252593}
+  - {fileID: 6897075122452596244}
   MinDistance: 1
   MaxDistance: 20
   Length: 121401
@@ -2979,7 +3159,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 5424007878177520244}
+  - {fileID: -7465303404794117578}
   MinDistance: 1
   MaxDistance: 20
   Length: 32600
@@ -3043,6 +3223,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-4736740437609037901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoorClose/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4697805856443647901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3076,6 +3276,46 @@ MonoBehaviour:
   m_Name: parameter:/DefaultAmbience/AmbientVolume
   m_EditorClassIdentifier: 
   Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-4663402725600554963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LightSwitchOn/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-4618354294115102308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WashDishes/extraVolume
+  m_EditorClassIdentifier: 
+  Name: extraVolume
   Min: 0
   Max: 100
   Default: 100
@@ -3303,8 +3543,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 2543099178161633802}
-  - {fileID: -4869454620786568623}
+  - {fileID: 3220922918633813934}
+  - {fileID: 1199557984226834599}
   MinDistance: 1
   MaxDistance: 20
   Length: 6979
@@ -3408,6 +3648,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-4272364573160752939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoMusic1/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4241462864788321551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3421,6 +3681,46 @@ MonoBehaviour:
   m_Name: parameter:/DrawerClose/AmbientVolume
   m_EditorClassIdentifier: 
   Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-4230792934942905434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience3D/extraVolume
+  m_EditorClassIdentifier: 
+  Name: extraVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-4222956081233156491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience/aVolume
+  m_EditorClassIdentifier: 
+  Name: aVolume
   Min: 0
   Max: 100
   Default: 100
@@ -3508,7 +3808,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -6721093640505448329}
+  - {fileID: -7291091191686986191}
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
@@ -3792,7 +4092,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 1150414309573084869}
+  - {fileID: -4663402725600554963}
   MinDistance: 1
   MaxDistance: 20
   Length: 227
@@ -4156,10 +4456,30 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -8015546789283920541}
+  - {fileID: -1052552271721319473}
   MinDistance: 1
   MaxDistance: 20
   Length: 19963
+--- !u!114 &-3296450889633198640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WashDishes/OpenFaucet
+  m_EditorClassIdentifier: 
+  Name: OpenFaucet
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3291476896635303176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4220,7 +4540,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6358870636515324881}
+  - {fileID: 3184181916155442610}
   MinDistance: 0
   MaxDistance: 0
   Length: 468035
@@ -4927,6 +5247,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-1928573313852122157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience/Daytime
+  m_EditorClassIdentifier: 
+  Name: Daytime
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-1892766281489708782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5027,7 +5367,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 878772487238675084}
+  - {fileID: 1170972829290401852}
   MinDistance: 1
   MaxDistance: 20
   Length: 3276
@@ -5351,6 +5691,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-1052552271721319473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Clock/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-1052219967210867844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5645,7 +6005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/ObjectInteractions.bank
   Name: ObjectInteractions
-  lastModified: 637402354428393495
+  lastModified: 637402061751924997
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -5720,6 +6080,26 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Clock/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-457709682093564477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bed/AmbientVolume
   m_EditorClassIdentifier: 
   Name: AmbientVolume
   Min: 0
@@ -5949,7 +6329,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8995345005830328590}
+  - {fileID: 6576135001120373385}
   MinDistance: 1
   MaxDistance: 20
   Length: 1100
@@ -5993,8 +6373,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 8693430045489269792}
-  - {fileID: -4851740898784125775}
+  - {fileID: 1348484560627458371}
+  - {fileID: -7370264150721090535}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -6092,7 +6472,7 @@ MonoBehaviour:
   - {fileID: 3324834653660037103}
   StringsBanks:
   - {fileID: 516468846872574919}
-  stringsBankWriteTime: 637402463314430199
+  stringsBankWriteTime: 637402061750405353
   cacheVersion: 5
 --- !u!114 &10079600219941764
 MonoBehaviour:
@@ -6454,7 +6834,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8947137044006648729}
+  - {fileID: 8875406445997014851}
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
@@ -6489,6 +6869,26 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Bed/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &450559321714668852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience/AmbientVolume
   m_EditorClassIdentifier: 
   Name: AmbientVolume
   Min: 0
@@ -6552,7 +6952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637402463314430199
+  lastModified: 637402061750405353
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -7138,6 +7538,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &1170972829290401852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ShowerCurtainClose/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1179255574555740384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7158,7 +7578,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4571486532148519993}
+  - {fileID: 3874395741048456907}
   MinDistance: 1
   MaxDistance: 20
   Length: 1248
@@ -7198,6 +7618,26 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &1199557984226834599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Faucet/OpenFaucet
+  m_EditorClassIdentifier: 
+  Name: OpenFaucet
+  Min: 0
+  Max: 1
+  Default: 0
   ID:
     data1: 0
     data2: 0
@@ -7242,6 +7682,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &1249008726984169118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DrawerOpen/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1298799628482999379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7262,7 +7722,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 772216662211525679}
+  - {fileID: 1249008726984169118}
   MinDistance: 1
   MaxDistance: 20
   Length: 1991
@@ -7286,6 +7746,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &1323263265415242059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience3D/aVolume
+  m_EditorClassIdentifier: 
+  Name: aVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1329815697123359271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7306,6 +7786,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &1331726941232252593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience3D/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1337014431638591017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7322,6 +7822,26 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &1348484560627458371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WalkRun/StepSurface
+  m_EditorClassIdentifier: 
+  Name: StepSurface
+  Min: 0
+  Max: 1
+  Default: 0
   ID:
     data1: 0
     data2: 0
@@ -7626,6 +8146,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &1979154606158291933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LightSwitchOff/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1988715572624054274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7706,10 +8246,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8604527517821816801}
-  - {fileID: -980285959118199248}
-  - {fileID: 2796027892279262027}
-  - {fileID: 521357705348348035}
+  - {fileID: -1928573313852122157}
+  - {fileID: 450559321714668852}
+  - {fileID: -4222956081233156491}
+  - {fileID: -5936322243898805989}
   MinDistance: 0
   MaxDistance: 0
   Length: 121401
@@ -7973,7 +8513,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 8050545424292625350}
+  - {fileID: 1979154606158291933}
   MinDistance: 1
   MaxDistance: 20
   Length: 206
@@ -8237,7 +8777,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4697805856443647901}
+  - {fileID: 7799765192584091980}
   MinDistance: 1
   MaxDistance: 20
   Length: 648
@@ -8661,6 +9201,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &3184181916155442610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MenuMusicLoop/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3185411412294269600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8681,6 +9241,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &3220922918633813934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Faucet/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3235874716393641299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8755,7 +9335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637402354428150223
+  lastModified: 637402061750345341
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -8779,7 +9359,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 1581594101257104100}
+  - {fileID: -4736740437609037901}
   MinDistance: 1
   MaxDistance: 20
   Length: 3288
@@ -8943,9 +9523,9 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -2647707004598555023}
-  - {fileID: 8125877263957000113}
-  - {fileID: -5173942483414226972}
+  - {fileID: -4618354294115102308}
+  - {fileID: -7662441803991583013}
+  - {fileID: -3296450889633198640}
   MinDistance: 1
   MaxDistance: 20
   Length: 6979
@@ -8983,7 +9563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Player.bank
   Name: Player
-  lastModified: 637402354428522889
+  lastModified: 637402061752715007
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -9007,6 +9587,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &3695027082032332774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phone/PhoneInteraction
+  m_EditorClassIdentifier: 
+  Name: PhoneInteraction
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3723553282772588762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9107,6 +9707,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &3874395741048456907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ChairGetUp/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3874602210663746377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9347,7 +9967,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 8077689708151464217}
+  - {fileID: -4272364573160752939}
   MinDistance: 1
   MaxDistance: 20
   Length: 13000
@@ -9811,7 +10431,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 3235874716393641299}
+  - {fileID: -8890567933716793868}
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
@@ -9995,7 +10615,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 7664962588194597429}
+  - {fileID: -8247502778769500812}
   MinDistance: 1
   MaxDistance: 20
   Length: 1128
@@ -10859,6 +11479,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6576135001120373385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ClosetDoorOpen/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &6630615773848825462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11153,7 +11793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/inter6s/Build/Desktop/Piano.bank
   Name: Piano
-  lastModified: 637402354428503202
+  lastModified: 637402061752694983
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -11293,6 +11933,46 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6886360117730332921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ChairSitDown/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6897075122452596244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DefaultAmbience3D/Daytime
+  m_EditorClassIdentifier: 
+  Name: Daytime
+  Min: 0
+  Max: 2
+  Default: 0
   ID:
     data1: 0
     data2: 0
@@ -11637,7 +12317,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -7570098985285974754}
+  - {fileID: 6886360117730332921}
   MinDistance: 1
   MaxDistance: 20
   Length: 2502
@@ -11774,6 +12454,46 @@ MonoBehaviour:
   m_Name: parameter:/PianoMusic1/Volume
   m_EditorClassIdentifier: 
   Name: Volume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &7799765192584091980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PictureFrame/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &7800443211038132659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phone/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
   Min: 0
   Max: 100
   Default: 100
@@ -12704,6 +13424,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &8875406445997014851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ClosetDoorClose/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8896701884089717543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12744,8 +13484,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -6154444516057329456}
-  - {fileID: 1019866809210746204}
+  - {fileID: 7800443211038132659}
+  - {fileID: 3695027082032332774}
   MinDistance: 1
   MaxDistance: 20
   Length: 9179
