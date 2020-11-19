@@ -55,7 +55,7 @@ public class Period : MonoBehaviour
 
         if (GameStatus.tempo >= 901)
         {
-            GameStatus.tempo = 0;
+            GameStatus.tempo = -19 ;
             GameStatus.dia++;
             transicao.SetActive(true);
         }
