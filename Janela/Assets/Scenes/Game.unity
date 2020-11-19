@@ -17235,6 +17235,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 787853472076020955, guid: 83149cf6e3b4b6f4599b47470e75586d, type: 3}
+--- !u!21 &586657481
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/OutlinePlus
+  m_Shader: {fileID: 4800000, guid: f0e778543e4d8a34295b7995426495da, type: 3}
+  m_ShaderKeywords: OUTLINE_USE_DEPTH
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &586938153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7359231236770510365, guid: 1423920d73859dc48b359f4f9f75f5e4,
@@ -24130,7 +24155,7 @@ MonoBehaviour:
   maxDepthThreshold: 0.2
   minNormalsThreshold: 0
   maxNormalsThreshold: 0.61
-  material: {fileID: 1134135432}
+  material: {fileID: 586657481}
 --- !u!1 &967454112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -942005298361514076, guid: 1423920d73859dc48b359f4f9f75f5e4,
@@ -27067,31 +27092,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6993355859725040126, guid: 1423920d73859dc48b359f4f9f75f5e4, type: 3}
---- !u!21 &1134135432
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/OutlinePlus
-  m_Shader: {fileID: 4800000, guid: f0e778543e4d8a34295b7995426495da, type: 3}
-  m_ShaderKeywords: OUTLINE_USE_DEPTH
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &1139595568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4098047184606670132, guid: 1423920d73859dc48b359f4f9f75f5e4,
@@ -37107,7 +37107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1631452377
 RectTransform:
   m_ObjectHideFlags: 0

@@ -19,9 +19,6 @@ public class Relogio : MonoBehaviour
     {
         ponteiroHorasZ.transform.localEulerAngles = new Vector3(startedAnglesHoras.x, startedAnglesHoras.y, startedAnglesHoras.z - GameStatus.tempo*angleFactorH ) ;
         ponteirosMinutosZ.transform.localEulerAngles = new Vector3(startedAnglesMinutos.x, startedAnglesMinutos.y, startedAnglesMinutos.z - GameStatus.tempo * angleFactorM);
-
-        if (Input.GetKeyDown("space"))
-            GameStatus.tempo = 895;
     }
     #region mouse
     public void OnMouseEnter()
