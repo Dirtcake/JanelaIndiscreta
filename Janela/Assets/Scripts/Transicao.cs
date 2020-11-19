@@ -11,11 +11,18 @@ public class Transicao : MonoBehaviour
 
     public GameObject diaHUD;
 
+    private void Awake()
+    {
+        diaHUD.transform.GetChild(GameStatus.dia).gameObject.SetActive(true);
+        gameObject.SetActive(false);
+    }
 
     void Start()
     {
         director = transform.GetChild(0).GetComponent<PlayableDirector>();
         director.stopped += OnPlayableDirectorStopped;
+
+
     }
 
     void OnPlayableDirectorStopped(PlayableDirector aDirector)

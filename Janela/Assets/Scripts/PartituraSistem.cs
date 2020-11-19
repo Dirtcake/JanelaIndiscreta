@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PartituraSistem : MonoBehaviour
 {
-
+    public GameObject partituraHUD;
 
     public static bool on = true;
     
@@ -15,7 +15,11 @@ public class PartituraSistem : MonoBehaviour
 
     void Update()
     {
-        
+        if (GameStatus.partituras != 0)
+        {
+            partituraHUD.SetActive(true);
+        }
+        else partituraHUD.SetActive(false);
     }
 
     public  void SpawnarPartitura()
