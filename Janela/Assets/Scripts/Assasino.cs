@@ -20,11 +20,13 @@ public class Assasino : MonoBehaviour
         }
     }
 
+    //public static float targetTime = Random.Range(4,7);
     public static float targetTime = 5;
+
 
     public static void resetCount()
     {
-        targetTime = 5;
+        targetTime = Random.Range(4,7 + GameStatus.IAResult);
         change = true;
     }
 

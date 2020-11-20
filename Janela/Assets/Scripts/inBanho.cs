@@ -8,8 +8,12 @@ public class inBanho : inBase
     public string BanhoInt;
     FMOD.Studio.EventInstance eBath;
 
+    public float decressimo;
+
     public override void exclusivo()
     {
+        GameStatus.nivelSuspeita -= decressimo;
+
         // Setar emiter do som
         eBath = FMODUnity.RuntimeManager.CreateInstance(BanhoInt);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(eBath, GetComponent<Transform>(), GetComponent<Rigidbody>());

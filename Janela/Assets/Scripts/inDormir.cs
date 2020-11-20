@@ -8,13 +8,11 @@ public class inDormir : inBase
     public string CamaInt;
     FMOD.Studio.EventInstance eDormir;
 
-    public GameObject assasino;
+    public float decressimo;
 
     public override void exclusivo()
     {
-        // Tirar assasino
-        assasino.SetActive(false);
-        GameStatus.assasino = false;
+        GameStatus.nivelSuspeita -= decressimo;
 
         // Setar emiter do som
         eDormir = FMODUnity.RuntimeManager.CreateInstance(CamaInt);

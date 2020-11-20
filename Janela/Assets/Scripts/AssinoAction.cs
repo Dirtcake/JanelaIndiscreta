@@ -10,14 +10,21 @@ public class AssinoAction : MonoBehaviour
 
     private void OnEnable()
     {
+        GameStatus.olhando = false;
+
         animationIndex = 0;
-        targetTime = 10;
+        targetTime = Random.Range(4, (7 + GameStatus.IAResult));
 
         for (int i = 0; i < transform.childCount; i++)
         {
             if (i == animationIndex) transform.GetChild(i).gameObject.SetActive(true);
             else transform.GetChild(i).gameObject.SetActive(false);
         }
+    }
+
+    private void OnDisable()
+    {
+        GameStatus.olhando = true;
     }
 
     void Update()
@@ -42,7 +49,7 @@ public class AssinoAction : MonoBehaviour
                 else transform.GetChild(i).gameObject.SetActive(false);
             }
 
-            targetTime = 10;
+            targetTime = Random.Range(3 - Mathf.Clamp(GameStatus.IAResult, 0, 1.57f), 4);
         }
     }
 }

@@ -13,6 +13,8 @@ public class Transicao : MonoBehaviour
     public GameObject CanvasPrincipal;
     public GameObject PersSentado, PersOriginal;
 
+    public GameObject pistas;
+
     private void Awake()
     {
         diaHUD.transform.GetChild(GameStatus.dia).gameObject.SetActive(true);
@@ -28,10 +30,10 @@ public class Transicao : MonoBehaviour
 
     void Update()
     {
-
-
         if (transform.GetChild(0).GetComponent<PlayableDirector>().time == transform.GetChild(0).GetComponent<PlayableDirector>().duration)
         {
+            GameStatus.nivelSuspeita = 0;
+
             PartituraSistem.on = true;
 
             CanvasPrincipal.SetActive(true);

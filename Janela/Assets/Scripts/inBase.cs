@@ -12,7 +12,7 @@ public class inBase : MonoBehaviour,iInteragivel
 
     protected bool StatusPista;         // Amazena se a pista está feita ou não
     public bool On = false;
-    public bool interagindo;            // Indica se o jogador está fazendo a pista ou não
+    public static bool interagindo;            // Indica se o jogador está fazendo a pista ou não
 
     void Start()
     {
@@ -22,7 +22,13 @@ public class inBase : MonoBehaviour,iInteragivel
     void Update()
     {
         //print(GameStatus.targetAction);
-
+        //Quando o observador está te olhando, a barra de suspeita sobe mais rapido
+        if (GameStatus.olhando && interagindo)
+        {
+            GameStatus.acrescimoNivelSuspeita = 0.09f;
+            print(GameStatus.acrescimoNivelSuspeita);
+        }
+        else GameStatus.acrescimoNivelSuspeita = 0.01f;
 
         updateCapsule();
         if (On)

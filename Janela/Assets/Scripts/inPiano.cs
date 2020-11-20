@@ -13,6 +13,7 @@ public class inPiano : inBase
     public bool isMusicPlaying = false;
 
     public GameObject personagemSentado, transicao;
+    public GameObject semPartituraHUD;
     public override void startCapsule()
     {
         distance = 2.2f;
@@ -20,20 +21,26 @@ public class inPiano : inBase
 
     public override void exclusivo()
     {
-        transicao.SetActive(true);
-        personagemSentado.SetActive(true);
-        GameStatus.Player.gameObject.SetActive(false);
-        GameStatus.tempo = -19;
-        GameStatus.dia++;
+        if (GameStatus.partituras != 0)
+        {
+            transicao.SetActive(true);
+            personagemSentado.SetActive(true);
+            GameStatus.Player.gameObject.SetActive(false);
+            GameStatus.tempo = -19;
+            GameStatus.dia++;
 
-        PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
+            PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
 
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());
 
-        PianoMusic();
+            PianoMusic();
+
+            GameStatus.partituras = 0;
+            GameObject.Find("PartituraHUD").SetActive(false);
 
 
-
+        }
+        else semPartituraHUD.SetActive(true);
     }
 
     public class FmodExtensions

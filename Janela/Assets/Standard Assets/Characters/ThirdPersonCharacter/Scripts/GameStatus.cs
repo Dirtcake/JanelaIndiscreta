@@ -22,6 +22,15 @@ public class GameStatus : MonoBehaviour
     public static int dia;                  // Numero de dias
 
     public static float nivelSuspeita;        // Nivel de suspeita
+    public static float wasted;               // Quantas vezes foi pego fazendo pista
+    public static float escape;               // Delta do escape
+    public static float IAResult;             // Resultado do algoritimo da IA  
+
+    public static bool olhando;             // Se o assasino está te olhando
+    public static bool fazendoPista;        // Se o jogador está fazendo alguma pista
+    public static float acrescimoNivelSuspeita;
+
+    public static float nivelObservador;    //Pontuação do jogador
 
     public static GameObject Player;
     public static GameObject cursores;
@@ -34,6 +43,8 @@ public class GameStatus : MonoBehaviour
     public static Image HUDSuspeita;
     void Start()
     {
+        acrescimoNivelSuspeita = 0.01f;
+
         FeedBackConclusao = GameObject.Find("FeedBackConclusao");
         FeedBackConclusao.SetActive(false);
 
@@ -75,7 +86,10 @@ public class GameStatus : MonoBehaviour
         /*
          O nivel de suspeita trabalha com baseno Alpha da hud "Observado_Dano", 255 no maximo e cada nivel de suspeita é 85.
          */
-        nivelSuspeita = Mathf.Clamp(nivelSuspeita + 0.01f * Time.deltaTime, 0, 1);
+
+
+
+        nivelSuspeita = Mathf.Clamp(nivelSuspeita + acrescimoNivelSuspeita * Time.deltaTime, 0, 1);
 
         Color c = HUDSuspeita.color;
         c.a = nivelSuspeita;
@@ -126,6 +140,30 @@ public class GameStatus : MonoBehaviour
                 else HudOlhos.transform.GetChild(i).gameObject.SetActive(false);
             }
         #endregion
+
+        IA();
+
+        print(nivelSuspeita);
+
+        #region Final
+        if (nivelSuspeita == 1)
+        {
+            PlayerPrefs.SetInt("Final", 2);
+            SceneManager.LoadScene("Final");
+        }
+
+        if(dia == 4)
+        {
+            PlayerPrefs.SetInt("Final", 0);
+            SceneManager.LoadScene("Final");
+        }
+        #endregion
+    }
+
+    public void IA()
+    {
+        //pista * 1 + PianoMusic1 * 2 - escape * 3  
+        IAResult = Mathf.Clamp((wasted + dia + escape), 0, Mathf.Infinity);
     }
 
     public void restartScene()

@@ -20,6 +20,8 @@ public class PartituraSistem : MonoBehaviour
             partituraHUD.SetActive(true);
         }
         else partituraHUD.SetActive(false);
+
+        SpawnarPartitura();
     }
 
     public  void SpawnarPartitura()
