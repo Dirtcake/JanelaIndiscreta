@@ -11,19 +11,19 @@ public class VolumeMaster : MonoBehaviour
 
     [SerializeField]
     [Range(-80f, 10f)]
-    private float masterVolume;
+    public float masterVolume;
 
     [SerializeField]
     [Range(-80f, 10f)]
-    private float sfxVolume;
+    public float sfxVolume;
 
     [SerializeField]
     [Range(-80f, 10f)]
-    private float musicVolume;
+    public float musicVolume;
 
     [SerializeField]
     [Range(-80f, 10f)]
-    private float ambienceVolume;
+    public float ambienceVolume;
 
 
     // Start is called before the first frame update

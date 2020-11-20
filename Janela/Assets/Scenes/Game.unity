@@ -2496,7 +2496,7 @@ MonoBehaviour:
   maxDepthThreshold: 0.2
   minNormalsThreshold: 0
   maxNormalsThreshold: 0.61
-  material: {fileID: 887130458}
+  material: {fileID: 1251318712}
 --- !u!1001 &69022751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6229,31 +6229,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8022826159406954436, guid: 4ee6fc2fb199a054bc2257ac177b99f6, type: 3}
---- !u!21 &170960071
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/OutlinePlus
-  m_Shader: {fileID: 4800000, guid: f0e778543e4d8a34295b7995426495da, type: 3}
-  m_ShaderKeywords: OUTLINE_USE_DEPTH
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &173523964
 GameObject:
   m_ObjectHideFlags: 0
@@ -8350,7 +8325,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 991053791}
   m_Father: {fileID: 531128162}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9072,6 +9048,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6538868237446837747, guid: 1423920d73859dc48b359f4f9f75f5e4, type: 3}
+--- !u!21 &315171078
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/OutlinePlus
+  m_Shader: {fileID: 4800000, guid: f0e778543e4d8a34295b7995426495da, type: 3}
+  m_ShaderKeywords: OUTLINE_USE_DEPTH
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &316267989
 GameObject:
   m_ObjectHideFlags: 0
@@ -20571,6 +20572,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: -0.26485828
       objectReference: {fileID: 0}
+    - target: {fileID: -8422501470450201043, guid: 0ffa97ca173c6ff458230163fad3c5ef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0580048c02310864a811918f6df60961, type: 2}
+    - target: {fileID: -8363409238314134523, guid: 0ffa97ca173c6ff458230163fad3c5ef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 192e452bcc7203f4eb898ba61c2a429a, type: 2}
     - target: {fileID: -8035959919358259772, guid: 0ffa97ca173c6ff458230163fad3c5ef,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -20726,6 +20737,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: 0.00000017562881
       objectReference: {fileID: 0}
+    - target: {fileID: -2278604251892223958, guid: 0ffa97ca173c6ff458230163fad3c5ef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fddfee15bcd8e4b45a4c2b2044f2e00b, type: 2}
     - target: {fileID: -927199367670048503, guid: 0ffa97ca173c6ff458230163fad3c5ef,
         type: 3}
       propertyPath: m_Name
@@ -20791,6 +20807,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: -0.29895476
       objectReference: {fileID: 0}
+    - target: {fileID: 3108940090243481188, guid: 0ffa97ca173c6ff458230163fad3c5ef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0290f0acd07192438e26c19a17dcd33, type: 2}
     - target: {fileID: 3862169092190203241, guid: 0ffa97ca173c6ff458230163fad3c5ef,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -20806,6 +20827,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: -0.0000000047672817
       objectReference: {fileID: 0}
+    - target: {fileID: 4824169200326131814, guid: 0ffa97ca173c6ff458230163fad3c5ef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0580048c02310864a811918f6df60961, type: 2}
     - target: {fileID: 4887174957884778393, guid: 0ffa97ca173c6ff458230163fad3c5ef,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -22475,31 +22501,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7f2efd0921d6fc43ad82eb870eaab3c, type: 3}
---- !u!21 &887130458
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/OutlinePlus
-  m_Shader: {fileID: 4800000, guid: f0e778543e4d8a34295b7995426495da, type: 3}
-  m_ShaderKeywords: OUTLINE_USE_DEPTH
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &887330228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -958830553874609708, guid: 83149cf6e3b4b6f4599b47470e75586d,
@@ -24652,7 +24653,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Ambient/AmbientMusic
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -24680,7 +24681,7 @@ MonoBehaviour:
   maxDepthThreshold: 0.2
   minNormalsThreshold: 0
   maxNormalsThreshold: 0.61
-  material: {fileID: 170960071}
+  material: {fileID: 315171078}
 --- !u!1 &967454112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -942005298361514076, guid: 1423920d73859dc48b359f4f9f75f5e4,
@@ -25003,6 +25004,65 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3513151079469889552, guid: 1423920d73859dc48b359f4f9f75f5e4, type: 3}
+--- !u!1 &991053790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991053791}
+  - component: {fileID: 991053792}
+  m_Layer: 0
+  m_Name: Ring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &991053791
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991053790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 259912743}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -956.58, y: -539.37}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &991053792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991053790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambient/Assassin/AssassinPhone
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 2.448833
+  OverrideMaxDistance: 20
 --- !u!1 &992124552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1510689902373051248, guid: 1423920d73859dc48b359f4f9f75f5e4,
@@ -25652,7 +25712,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Ambient/Clock
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -30507,6 +30567,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4964871738182230721, guid: 8725c8ec2667ce64e8d734a9cc955727, type: 3}
+--- !u!21 &1251318712
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/OutlinePlus
+  m_Shader: {fileID: 4800000, guid: f0e778543e4d8a34295b7995426495da, type: 3}
+  m_ShaderKeywords: OUTLINE_USE_DEPTH
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &1252021340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5108391036772884469, guid: 1423920d73859dc48b359f4f9f75f5e4,
