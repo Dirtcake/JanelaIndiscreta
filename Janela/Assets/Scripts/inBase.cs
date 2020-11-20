@@ -14,8 +14,6 @@ public class inBase : MonoBehaviour,iInteragivel
     public bool On = false;
     public bool interagindo;            // Indica se o jogador está fazendo a pista ou não
 
-
-
     void Start()
     {
         startCapsule();
@@ -46,6 +44,7 @@ public class inBase : MonoBehaviour,iInteragivel
     public virtual void acao()
     { 
         On = true;
+
         GameStatus.targetAction = actionName;
     }
 

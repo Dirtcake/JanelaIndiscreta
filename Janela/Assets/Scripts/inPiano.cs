@@ -12,24 +12,7 @@ public class inPiano : inBase
     public GameObject assasino, observador,perdestes, ganhastes;
     public bool isMusicPlaying = false;
 
-    /* void Start()
-     {
-         PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
-
-         FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());
-
-         if (isMusicPlaying == true)
-         {
-             PianoMusic();
-         }
-     }
-
-     void Update()
-     {
-         //FMOD.Studio.PLAYBACK_STATE fmodPlayback;
-         //PianoMusic1.getPlaybackState(out fmodPlayback);
-     }*/
-
+    public GameObject personagemSentado, transicao;
     public override void startCapsule()
     {
         distance = 2.2f;
@@ -37,38 +20,17 @@ public class inPiano : inBase
 
     public override void exclusivo()
     {
+        transicao.SetActive(true);
+        personagemSentado.SetActive(true);
+        GameStatus.Player.gameObject.SetActive(false);
+        GameStatus.tempo = -19;
+        GameStatus.dia++;
+
         PianoMusic1 = FMODUnity.RuntimeManager.CreateInstance(firstPianoMusic);
 
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());     
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(PianoMusic1, GetComponent<Transform>(), GetComponent<Rigidbody>());
 
-        // aparece o assasino e o observador
-
-
-        if (GameStatus.assasino == true && GameStatus.pista == true )
-        {
-
-            perdestes.SetActive(true);
-            Time.timeScale = 0;
-
-                PianoMusic();
-
-        }
-
-        else if (GameStatus.assasino == false && GameStatus.pista == true && GameStatus.observador == true)
-        {
-
-            ganhastes.SetActive(true);
-            Time.timeScale = 0;
-
-                PianoMusic();
-
-        }
-
-        assasino.SetActive(true);
-        observador.SetActive(true);
-
-        GameStatus.assasino = true;
-        GameStatus.observador = true;
+        PianoMusic();
 
 
 

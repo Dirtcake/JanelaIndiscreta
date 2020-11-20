@@ -75,7 +75,7 @@ public class GameStatus : MonoBehaviour
         /*
          O nivel de suspeita trabalha com baseno Alpha da hud "Observado_Dano", 255 no maximo e cada nivel de suspeita é 85.
          */
-        nivelSuspeita = Mathf.Clamp(nivelSuspeita + 0.05f * Time.deltaTime, 0, 1);
+        nivelSuspeita = Mathf.Clamp(nivelSuspeita + 0.01f * Time.deltaTime, 0, 1);
 
         Color c = HUDSuspeita.color;
         c.a = nivelSuspeita;

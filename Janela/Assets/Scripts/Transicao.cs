@@ -10,6 +10,8 @@ public class Transicao : MonoBehaviour
     private PlayableDirector director;
 
     public GameObject diaHUD;
+    public GameObject CanvasPrincipal;
+    public GameObject PersSentado, PersOriginal;
 
     private void Awake()
     {
@@ -20,20 +22,8 @@ public class Transicao : MonoBehaviour
     void Start()
     {
         director = transform.GetChild(0).GetComponent<PlayableDirector>();
-        director.stopped += OnPlayableDirectorStopped;
-
-
     }
 
-    void OnPlayableDirectorStopped(PlayableDirector aDirector)
-    {
-        if (director == aDirector)
-        {
-
-            diaHUD.transform.GetChild(GameStatus.dia).gameObject.SetActive(true);
-            gameObject.SetActive(false);
-        }
-    }
 
 
     void Update()
@@ -42,8 +32,18 @@ public class Transicao : MonoBehaviour
 
         if (transform.GetChild(0).GetComponent<PlayableDirector>().time == transform.GetChild(0).GetComponent<PlayableDirector>().duration)
         {
+            PartituraSistem.on = true;
+
+            CanvasPrincipal.SetActive(true);
+
+            PersSentado.SetActive(false);
+            PersOriginal.SetActive(true);
             diaHUD.transform.GetChild(GameStatus.dia).gameObject.SetActive(true);
             gameObject.SetActive(false);
+        }
+        else
+        {
+            CanvasPrincipal.SetActive(false);
         }
     }
 

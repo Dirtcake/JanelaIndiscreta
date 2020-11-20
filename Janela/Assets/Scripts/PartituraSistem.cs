@@ -26,7 +26,7 @@ public class PartituraSistem : MonoBehaviour
     {
         if (on)
         {
-            transform.GetChild((int)Random.Range(0,2)).GetComponent<inPartitura>().partitura = true;
+            transform.GetChild((int)Random.Range(0,3)).GetComponent<inPartitura>().partitura = true;
             on = false;
         }
     }
