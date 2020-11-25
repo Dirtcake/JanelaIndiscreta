@@ -11,6 +11,8 @@ public class PlayerSoundsFMOD : MonoBehaviour
 
     bool isPlayerWalking = false;
 
+    Animator m_Animator;
+
     public NavMeshAgent navAgent;
     public float curSpeed; //só pra ver a velocidade da navmesh
     public float walkSpeed; //intervalo entre os passos, 0.3 funciona bem
@@ -19,6 +21,8 @@ public class PlayerSoundsFMOD : MonoBehaviour
 
     void Start()
     {
+        m_Animator = GetComponent<Animator>();
+
         Walk = FMODUnity.RuntimeManager.CreateInstance(walkEvent);
         InvokeRepeating("Footsteps", 0, walkSpeed);
     }
@@ -34,9 +38,15 @@ public class PlayerSoundsFMOD : MonoBehaviour
 
         if (curSpeed > 1)
         {
+            m_Animator.SetBool("isWalk", true);
             isPlayerWalking = true;
+
         }
-        else isPlayerWalking = false;
+        else
+        {
+            m_Animator.SetBool("isWalk", true);
+            isPlayerWalking = false;
+        }
     }
 
     //Unity me ama então mudei a porra toda pra tocar os passos

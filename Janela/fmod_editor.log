@@ -2,14 +2,12 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20104 (111454), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=8, nSamplesPerSec=48000, nAvgBytesPerSec=1536000, nBlockAlign=32, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x0000063F, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 7, input speaker mode 3
-[LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000021336DA82A8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000213A7CF0FC8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,356 +18,149 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1808000
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A3426FF508
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEA6907DE0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEA6907DB0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEA6907EB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEA6907F70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002132ECA1358
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Turning-Paper-Book-Page-Med-Speed-A2-www.fesliyanstudios.com-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=10624, lengthpcm=64512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.629517.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1808000
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A3426FF508
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEA6907DE0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEA6907DB0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEA6907EB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEA6907F70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002132ECA1358
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Turning-Paper-Book-Page-Fast-A1-www.fesliyanstudios.com-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=8576, lengthpcm=52992, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630493.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1808000
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A3426FF508
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEA6907DE0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEA6907DB0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEA6907EB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEA6907F70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002132ECA1358
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Turning-Paper-Book-Page-Hard-A1-www.fesliyanstudios.com-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=13088, lengthpcm=82944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.625610.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1808000
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A3426FF508
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEA6907DE0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEA6907DB0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEA6907EB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEA6907F70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002132ECA1358
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Turning-Paper-Book-Page-Fast-A2-www.fesliyanstudios.com-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=8704, lengthpcm=48384, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.593872.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1808000
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A3426FF508
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEA6907DE0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEA6907DB0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEA6907EB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEA6907F70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002132ECA1358
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Turning-Paper-Book-Page-Med-Speed-A3-www.fesliyanstudios.com-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=15712, lengthpcm=95616, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.627869.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1808000
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A3426FF508
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEA6907DE0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEA6907DB0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEA6907EB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEA6907F70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002132ECA1358
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Turning-Paper-Book-Page-Fast-A1-www.fesliyanstudios.com-www.fesliyanstudios.com (1)', format=5, channels=1, frequency=48000, lengthbytes=8576, lengthpcm=52992, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630493.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1808000
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A3426FF508
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEA6907DE0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEA6907DB0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEA6907EB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEA6907F70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002132ECA1358
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Turning-Paper-Book-Page-Med-Speed-A1-www.fesliyanstudios.com-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=9408, lengthpcm=54144, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.627167.
 [LOG] SystemI::createSound                     : filename = ..\FMOD\inter6s\Build\Desktop/Ambience.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000021333F5B748 : node = 000002133063B070
-[LOG] SystemI::createSound                     : add node to async list : head = 00000213366E9D28.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021333F5B748
+[LOG] SystemI::createSound                     : setdata soundi = 00000213AD5634A8 : node = 00000213A68E2CE0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000021455F05DF8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000213AD5634A8
 [LOG] SystemI::createSoundInternal             :     Create name='..\FMOD\inter6s\Build\Desktop/Ambience.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 9301664
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 155488
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002133063B180
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000213A68E2DF0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Birds Forest Quiet Wind Loop NR', format=5, channels=2, frequency=48000, lengthbytes=652384, lengthpcm=2687915, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.026052.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021333F5B748
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021333F5BE08
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021333F5BE08
-[LOG] SoundI::release                          : Night-insect-sounds (0000021333F5B3E8)
-[LOG] SoundI::release                          :     Night-insect-sounds (000002132EB90118)
-[LOG] SoundI::release                          :     Night-insect-sounds (0000021333F5BAA8)
-[LOG] SoundI::release                          : Empty-city-sound-effect (000002132F139B88)
-[LOG] SoundI::release                          :     Empty-city-sound-effect (000002132EB8FF78)
-[LOG] SoundI::release                          :     Empty-city-sound-effect (0000021333F5C168)
-[LOG] SoundI::release                          : Birds Forest Quiet Wind Loop NR (000002132F1399D8)
-[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000002132EB8FDD8)
-[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (0000021333F5C678)
-[LOG] SystemI::createSound                     : filename = ..\FMOD\inter6s\Build\Desktop/Ambience.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000021333F5BFB8 : node = 000002132F239BF0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000213366E9D28.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021333F5BFB8
-[LOG] SystemI::createSoundInternal             :     Create name='..\FMOD\inter6s\Build\Desktop/Ambience.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9301664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 155488
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002132F239D00
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1744
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Small-Room-Hiss-Tone-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=261632, lengthpcm=1548288, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.025513.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021333F5BFB8
-[LOG] SystemI::createSound                     : filename = ..\FMOD\inter6s\Build\Desktop/Ambience.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000021333F5C678 : node = 000002132E201D20
-[LOG] SystemI::createSound                     : add node to async list : head = 00000213366E9D28.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021333F5C678
-[LOG] SystemI::createSoundInternal             :     Create name='..\FMOD\inter6s\Build\Desktop/Ambience.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9301664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 155488
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002132E201E30
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='clock_tic_tac_loop_20s_01', format=5, channels=2, frequency=48000, lengthbytes=238336, lengthpcm=958238, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.059326.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021333F5C678
-[LOG] SoundI::release                          : clock_tic_tac_loop_20s_01 (000002132F13A098)
-[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (000002132EB90798)
-[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (000002132F138E08)
-[LOG] SoundI::release                          : Small-Room-Hiss-Tone-www.fesliyanstudios.com (000002132F13A3F8)
-[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (000002132EB8FC38)
-[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (0000021333F5C4C8)
-[LOG] SystemI::createSound                     : filename = ..\FMOD\inter6s\Build\Desktop/Ambience.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000021333F5C4C8 : node = 000002132E202C20
-[LOG] SystemI::createSound                     : add node to async list : head = 00000213366E9D28.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021333F5C4C8
-[LOG] SystemI::createSoundInternal             :     Create name='..\FMOD\inter6s\Build\Desktop/Ambience.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9301664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 155488
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002132E202D30
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 35000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Birds Forest Quiet Wind Loop NR', format=5, channels=2, frequency=48000, lengthbytes=652384, lengthpcm=2687915, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.026052.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021333F5C4C8
-[LOG] SoundI::release                          : Birds Forest Quiet Wind Loop NR (0000021333F5B748)
-[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000002132DB60A38)
-[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (0000021333F5BE08)
-[LOG] SystemI::createSound                     : filename = ..\FMOD\inter6s\Build\Desktop/Ambience.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002132F138E08 : node = 000002133063AF30
-[LOG] SystemI::createSound                     : add node to async list : head = 00000213366E9D28.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002132F138E08
-[LOG] SystemI::createSoundInternal             :     Create name='..\FMOD\inter6s\Build\Desktop/Ambience.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9301664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 155488
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002133063B040
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 12000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Small-Room-Hiss-Tone-www.fesliyanstudios.com', format=5, channels=1, frequency=48000, lengthbytes=261632, lengthpcm=1548288, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.025513.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002132F138E08
-[LOG] SoundI::release                          : Small-Room-Hiss-Tone-www.fesliyanstudios.com (0000021333F5BFB8)
-[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (000002132DB632D8)
-[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (0000021333F5C168)
-[LOG] SoundI::release                          :  (000002132E9871E8)
-[LOG] SoundI::release                          :     footstep_carpet_01 (000002132F44DC48)
-[LOG] SoundI::release                          :  (0000021377349378)
-[LOG] SoundI::release                          :     footstep_carpet_02 (000002132F44E948)
-[LOG] SoundI::release                          :  (0000021377349098)
-[LOG] SoundI::release                          :     footstep_carpet_03 (000002132F44EC88)
-[LOG] SoundI::release                          :  (0000021377349D88)
-[LOG] SoundI::release                          :     footstep_carpet_04 (000002132F44EAE8)
-[LOG] SoundI::release                          :  (0000021377349658)
-[LOG] SoundI::release                          :     footstep_carpet_05 (000002132EB90938)
-[LOG] SoundI::release                          :  (0000021377349938)
-[LOG] SoundI::release                          :     footstep_carpet_06 (000002132F44F4A8)
-[LOG] SoundI::release                          :  (000002132ED6F6D8)
-[LOG] SoundI::release                          :     footstep_carpet_07 (000002132F44F168)
-[LOG] SoundI::release                          :  (00000213773494E8)
-[LOG] SoundI::release                          :     footstep_carpet_08 (000002132F44F308)
-[LOG] SoundI::release                          :  (000002132E987078)
-[LOG] SoundI::release                          :     footstep_carpet_09 (000002132F44DAA8)
-[LOG] SoundI::release                          :  (0000021377349AA8)
-[LOG] SoundI::release                          :     footstep_carpet_10 (000002132F44F648)
-[LOG] SoundI::release                          :  (000002132ED6F568)
-[LOG] SoundI::release                          :     footstep_carpet_11 (000002132F4504E8)
-[LOG] SoundI::release                          :  (000002132ED6F9B8)
-[LOG] SoundI::release                          :     footstep_carpet_12 (000002132F450EA8)
-[LOG] SoundI::release                          :  (00000213305BA938)
-[LOG] SoundI::release                          :     footstep_carpet_13 (000002132F44E468)
-[LOG] SoundI::release                          :  (000002132EB92C28)
-[LOG] SoundI::release                          :     footstep_carpet_14 (000002132EB8E578)
-[LOG] SoundI::release                          :  (0000021377349C18)
-[LOG] SoundI::release                          :     footstep_carpet_15 (000002132EB8F8F8)
-[LOG] SoundI::release                          :  (000002132ED6FE08)
-[LOG] SoundI::release                          :     footstep_carpet_16 (000002132F4509C8)
-[LOG] SoundI::release                          :  (000002132ED6F848)
-[LOG] SoundI::release                          :     footstep_carpet_17 (000002132F44FB28)
-[LOG] SoundI::release                          :  (000002132ED6FF78)
-[LOG] SoundI::release                          :     footstep_carpet_18 (000002132F44F988)
-[LOG] SoundI::release                          :  (000002132EB92AB8)
-[LOG] SoundI::release                          :     footstep_carpet_19 (000002132EB8EA58)
-[LOG] SoundI::release                          :  (000002132ED6F288)
-[LOG] SoundI::release                          :     footstep_carpet_20 (000002132F44FE68)
-[LOG] SoundI::release                          :  (000002132E987D68)
-[LOG] SoundI::release                          :     footstep-wood-1 (000002132F44D768)
-[LOG] SoundI::release                          :  (00000213305BAC18)
-[LOG] SoundI::release                          :     footstep-wood-2 (000002132F44DDE8)
-[LOG] SoundI::release                          :  (000002132E9877A8)
-[LOG] SoundI::release                          :     footstep-wood-3 (000002132F44FCC8)
-[LOG] SoundI::release                          :  (0000021377349208)
-[LOG] SoundI::release                          :     footstep-wood-4 (000002132F44E608)
-[LOG] SoundI::release                          :  (00000213773497C8)
-[LOG] SoundI::release                          :     footstep-wood-5 (000002132EB8E8B8)
-[LOG] SoundI::release                          :  (000002132EB927D8)
-[LOG] SoundI::release                          :     car1 (000002132EB8E098)
-[LOG] SoundI::release                          :  (000002132EB92668)
-[LOG] SoundI::release                          :     car2 (000002132EB8EF38)
-[LOG] SoundI::release                          :  (0000021360A7B8B8)
-[LOG] SoundI::release                          :     car3 (000002132EB8F418)
-[LOG] SoundI::release                          :  (000002132EB92948)
-[LOG] SoundI::release                          :     car4 (000002132EB905F8)
-[LOG] SoundI::release                          :  (000002132E0276F8)
-[LOG] SoundI::release                          :     dogs1 (000002132EB8F0D8)
-[LOG] SoundI::release                          :  (000002132E026FC8)
-[LOG] SoundI::release                          :     dogs10 (000002132EB8F758)
-[LOG] SoundI::release                          :  (000002132EB92D98)
-[LOG] SoundI::release                          :     dogs11 (000002132EB90AD8)
-[LOG] SoundI::release                          :  (000002132EB92388)
-[LOG] SoundI::release                          :     dogs12 (000002132EB90E18)
-[LOG] SoundI::release                          :  (0000021360A7B018)
-[LOG] SoundI::release                          :     dogs13 (000002132EB91978)
-[LOG] SoundI::release                          :  (0000021360A7B468)
-[LOG] SoundI::release                          :     dogs14 (000002132EB8F5B8)
-[LOG] SoundI::release                          :  (0000021360A7B748)
-[LOG] SoundI::release                          :     dogs2 (000002132EB8E3D8)
-[LOG] SoundI::release                          :  (0000021360A7BA28)
-[LOG] SoundI::release                          :     dogs3 (000002132EB91CB8)
-[LOG] SoundI::release                          :  (0000021360A7B2F8)
-[LOG] SoundI::release                          :     dogs4 (000002132EB902B8)
-[LOG] SoundI::release                          : Música-in-game (000002132F139D38)
-[LOG] SoundI::release                          :     Música-in-game (000002132F44E2C8)
-[LOG] SoundI::release                          :     Música-in-game (000002132F1394C8)
-[LOG] SoundI::release                          : clock_tic_tac_loop_20s_01 (0000021333F5C678)
-[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (000002132DB63478)
-[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (0000021333F5B3E8)
-[LOG] SoundI::release                          : Small-Room-Hiss-Tone-www.fesliyanstudios.com (000002132F138E08)
-[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (000002132DB603B8)
-[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (000002132F139318)
-[LOG] SoundI::release                          : Birds Forest Quiet Wind Loop NR (0000021333F5C4C8)
-[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000002132DB613F8)
-[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000002132F13A908)
-[LOG] SoundI::release                          :  (000002132E027588)
-[LOG] SoundI::release                          :     dogs5 (000002132EB91498)
-[LOG] SoundI::release                          :  (0000021360A7AEA8)
-[LOG] SoundI::release                          :     dogs6 (000002132EB917D8)
-[LOG] SoundI::release                          :  (000002132E0279D8)
-[LOG] SoundI::release                          :     dogs7 (000002132EB91158)
-[LOG] SoundI::release                          :  (000002132E027868)
-[LOG] SoundI::release                          :     dogs8 (000002132EB8ED98)
-[LOG] SoundI::release                          :  (000002132E0272A8)
-[LOG] SoundI::release                          :     dogs9 (000002132EB8E238)
-[LOG] SoundI::release                          :  (000002132EB924F8)
-[LOG] SoundI::release                          :     birds1 (000002132EB8E718)
-[LOG] SoundI::release                          :  (000002132E027418)
-[LOG] SoundI::release                          :     birds10 (000002132EB8F278)
-[LOG] SoundI::release                          :  (0000021360A7B5D8)
-[LOG] SoundI::release                          :     birds2 (000002132EB8FA98)
-[LOG] SoundI::release                          :  (000002132E026E58)
-[LOG] SoundI::release                          :     birds3 (000002132EB91E58)
-[LOG] SoundI::release                          :  (0000021360A7B188)
-[LOG] SoundI::release                          :     birds4 (000002132EB91B18)
-[LOG] SoundI::release                          :  (000002132EB920A8)
-[LOG] SoundI::release                          :     birds5 (000002132EB90C78)
-[LOG] SoundI::release                          :  (0000021360A7BB98)
-[LOG] SoundI::release                          :     birds6 (000002132EB91638)
-[LOG] SoundI::release                          :  (000002132EB92218)
-[LOG] SoundI::release                          :     birds7 (000002132EB90FB8)
-[LOG] SoundI::release                          :  (000002132E026CE8)
-[LOG] SoundI::release                          :     birds8 (000002132EB8EBF8)
-[LOG] SoundI::release                          :  (000002132E027138)
-[LOG] SoundI::release                          :     birds9 (000002132EB912F8)
-[LOG] SoundI::release                          :  (0000021360C6F458)
-[LOG] SoundI::release                          :     Turning-Paper-Book-Page-Fast-A1-www.fesliyanstudios.com-www.fesliyanstudios.com (1) (000002132DB62298)
-[LOG] SoundI::release                          :  (0000021360C6F008)
-[LOG] SoundI::release                          :     Turning-Paper-Book-Page-Fast-A1-www.fesliyanstudios.com-www.fesliyanstudios.com (000002132DB60898)
-[LOG] SoundI::release                          :  (0000021360C6EE98)
-[LOG] SoundI::release                          :     Turning-Paper-Book-Page-Fast-A2-www.fesliyanstudios.com-www.fesliyanstudios.com (000002132DB610B8)
-[LOG] SoundI::release                          :  (0000021360C6F178)
-[LOG] SoundI::release                          :     Turning-Paper-Book-Page-Hard-A1-www.fesliyanstudios.com-www.fesliyanstudios.com (000002132DB625D8)
-[LOG] SoundI::release                          :  (0000021360C6F5C8)
-[LOG] SoundI::release                          :     Turning-Paper-Book-Page-Med-Speed-A1-www.fesliyanstudios.com-www.fesliyanstudios.com (000002132DB61258)
-[LOG] SoundI::release                          :  (0000021360C6ED28)
-[LOG] SoundI::release                          :     Turning-Paper-Book-Page-Med-Speed-A2-www.fesliyanstudios.com-www.fesliyanstudios.com (000002132DB62F98)
-[LOG] SoundI::release                          :  (0000021360C6F2E8)
-[LOG] SoundI::release                          :     Turning-Paper-Book-Page-Med-Speed-A3-www.fesliyanstudios.com-www.fesliyanstudios.com (000002132DB61F58)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000213AD5634A8
+[LOG] SoundI::release                          : Night-insect-sounds (00000213F29E2DE8)
+[LOG] SoundI::release                          :     Night-insect-sounds (000002138BE4DD58)
+[LOG] SoundI::release                          :     Night-insect-sounds (0000021455677388)
+[LOG] SoundI::release                          : Empty-city-sound-effect (00000213F29E23C8)
+[LOG] SoundI::release                          :     Empty-city-sound-effect (000002138BE4D6D8)
+[LOG] SoundI::release                          :     Empty-city-sound-effect (00000214552FA098)
+[LOG] SoundI::release                          : Birds Forest Quiet Wind Loop NR (00000213A9DE6578)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (000002138BE4D538)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (00000214552FAAB8)
+[LOG] SoundI::release                          :  (00000213A653D778)
+[LOG] SoundI::release                          :     footstep_carpet_01 (00000213AD0CD948)
+[LOG] SoundI::release                          :  (00000213475C35E8)
+[LOG] SoundI::release                          :     footstep_carpet_02 (00000213A62A2708)
+[LOG] SoundI::release                          :  (00000213A6FFCCC8)
+[LOG] SoundI::release                          :     footstep_carpet_03 (000002138BE35F38)
+[LOG] SoundI::release                          :  (00000213464014F8)
+[LOG] SoundI::release                          :     footstep_carpet_04 (00000213A62A1A08)
+[LOG] SoundI::release                          :  (00000213A6FFB8A8)
+[LOG] SoundI::release                          :     footstep_carpet_05 (00000213A679CC38)
+[LOG] SoundI::release                          :  (00000213A6FFCE38)
+[LOG] SoundI::release                          :     footstep_carpet_06 (000002138BE358B8)
+[LOG] SoundI::release                          :  (0000021455435ED8)
+[LOG] SoundI::release                          :     footstep_carpet_07 (00000211C5C4AED8)
+[LOG] SoundI::release                          :  (00000213A6FFC878)
+[LOG] SoundI::release                          :     footstep_carpet_08 (000002138BE360D8)
+[LOG] SoundI::release                          :  (00000214552E9A58)
+[LOG] SoundI::release                          :     footstep_carpet_09 (00000213AD0C9EC8)
+[LOG] SoundI::release                          :  (00000213A6FFC708)
+[LOG] SoundI::release                          :     footstep_carpet_10 (00000213A679B098)
+[LOG] SoundI::release                          :  (0000021455435358)
+[LOG] SoundI::release                          :     footstep_carpet_11 (00000211C5C4B898)
+[LOG] SoundI::release                          :  (00000213A653D048)
+[LOG] SoundI::release                          :     footstep_carpet_12 (00000211C5C4B218)
+[LOG] SoundI::release                          :  (00000211C5C4D968)
+[LOG] SoundI::release                          :     footstep_carpet_13 (00000213A62A23C8)
+[LOG] SoundI::release                          :  (00000213A6FFB5C8)
+[LOG] SoundI::release                          :     footstep_carpet_14 (0000021346265F58)
+[LOG] SoundI::release                          :  (00000213A6FF9908)
+[LOG] SoundI::release                          :     footstep_carpet_15 (0000021346266AB8)
+[LOG] SoundI::release                          :  (0000021455435638)
+[LOG] SoundI::release                          :     footstep_carpet_16 (00000211C5C4AD38)
+[LOG] SoundI::release                          :  (00000213A653C7A8)
+[LOG] SoundI::release                          :     footstep_carpet_17 (00000211C5C4A6B8)
+[LOG] SoundI::release                          :  (00000214554361B8)
+[LOG] SoundI::release                          :     footstep_carpet_18 (00000211C5C49CF8)
+[LOG] SoundI::release                          :  (00000213A6FFC9E8)
+[LOG] SoundI::release                          :     footstep_carpet_19 (0000021346266C58)
+[LOG] SoundI::release                          :  (00000213A653C918)
+[LOG] SoundI::release                          :     footstep_carpet_20 (00000211C5C49B58)
+[LOG] SoundI::release                          :  (00000213A653D608)
+[LOG] SoundI::release                          :     footstep-wood-1 (00000211C5C49E98)
+[LOG] SoundI::release                          :  (00000214552E8358)
+[LOG] SoundI::release                          :     footstep-wood-2 (00000213AD0CA208)
+[LOG] SoundI::release                          :  (00000213A653DD38)
+[LOG] SoundI::release                          :     footstep-wood-3 (00000213AD0CDAE8)
+[LOG] SoundI::release                          :  (00000211C5C4DC48)
+[LOG] SoundI::release                          :     footstep-wood-4 (00000213A62A2568)
+[LOG] SoundI::release                          :  (00000213A6FFB2E8)
+[LOG] SoundI::release                          :     footstep-wood-5 (00000213A679B3D8)
+[LOG] SoundI::release                          :  (00000213A6FFA1A8)
+[LOG] SoundI::release                          :     car1 (000002138BE4BE78)
+[LOG] SoundI::release                          :  (00000213A6FFA768)
+[LOG] SoundI::release                          :     car2 (000002138BE4F758)
+[LOG] SoundI::release                          :  (00000213A6FFB178)
+[LOG] SoundI::release                          :     car3 (000002138BE4E8B8)
+[LOG] SoundI::release                          :  (00000213A6FFC2B8)
+[LOG] SoundI::release                          :     car4 (000002138BE4ED98)
+[LOG] SoundI::release                          : Birds Forest Quiet Wind Loop NR (00000213AD5634A8)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (00000213AD55F7F8)
+[LOG] SoundI::release                          :     Birds Forest Quiet Wind Loop NR (00000213AD5639B8)
+[LOG] SoundI::release                          : Small-Room-Hiss-Tone-www.fesliyanstudios.com (00000213A9DE79B8)
+[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (000002138BE4D398)
+[LOG] SoundI::release                          :     Small-Room-Hiss-Tone-www.fesliyanstudios.com (00000214552FA908)
+[LOG] SoundI::release                          : Música-in-game (00000214556771D8)
+[LOG] SoundI::release                          :     Música-in-game (00000211C5C4B6F8)
+[LOG] SoundI::release                          :     Música-in-game (00000214552FA758)
+[LOG] SoundI::release                          : clock_tic_tac_loop_20s_01 (00000214552FB688)
+[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (000002138BE4BB38)
+[LOG] SoundI::release                          :     clock_tic_tac_loop_20s_01 (00000213A9DE6C38)
+[LOG] SoundI::release                          :  (00000213A6FFB738)
+[LOG] SoundI::release                          :     dogs1 (000002138BE4F0D8)
+[LOG] SoundI::release                          :  (00000213A6FFAA48)
+[LOG] SoundI::release                          :     dogs10 (000002138BE4DBB8)
+[LOG] SoundI::release                          :  (00000213A6FFBE68)
+[LOG] SoundI::release                          :     dogs11 (000002138BE4E098)
+[LOG] SoundI::release                          :  (00000213A6FFABB8)
+[LOG] SoundI::release                          :     dogs12 (00000213A61974A8)
+[LOG] SoundI::release                          :  (00000213A6FFB458)
+[LOG] SoundI::release                          :     dogs13 (000002138BE4CD18)
+[LOG] SoundI::release                          :  (00000213A6FF9BE8)
+[LOG] SoundI::release                          :     dogs14 (000002138BE4F5B8)
+[LOG] SoundI::release                          :  (00000213A6FF9628)
+[LOG] SoundI::release                          :     dogs2 (000002138BE4E3D8)
+[LOG] SoundI::release                          :  (00000213A6FFBA18)
+[LOG] SoundI::release                          :     dogs3 (000002138BE4D058)
+[LOG] SoundI::release                          :  (00000213A6FFCB58)
+[LOG] SoundI::release                          :     dogs4 (000002138BE4E238)
+[LOG] SoundI::release                          :  (00000213A6FFB008)
+[LOG] SoundI::release                          :     dogs5 (000002138BE4DA18)
+[LOG] SoundI::release                          :  (00000213A6FF91D8)
+[LOG] SoundI::release                          :     dogs6 (000002138BE4CB78)
+[LOG] SoundI::release                          :  (00000213A6FFA488)
+[LOG] SoundI::release                          :     dogs7 (000002138BE4BCD8)
+[LOG] SoundI::release                          :  (00000213A6FFC148)
+[LOG] SoundI::release                          :     dogs8 (000002138BE4C698)
+[LOG] SoundI::release                          :  (00000213A6FFA8D8)
+[LOG] SoundI::release                          :     dogs9 (000002138BE4F278)
+[LOG] SoundI::release                          :  (00000213A6FF9EC8)
+[LOG] SoundI::release                          :     birds1 (000002138BE4CEB8)
+[LOG] SoundI::release                          :  (00000213A6FFC428)
+[LOG] SoundI::release                          :     birds10 (000002138BE4C1B8)
+[LOG] SoundI::release                          :  (00000213A6FF94B8)
+[LOG] SoundI::release                          :     birds2 (000002138BE4D878)
+[LOG] SoundI::release                          :  (00000213A6FFBCF8)
+[LOG] SoundI::release                          :     birds3 (000002138BE4C358)
+[LOG] SoundI::release                          :  (00000213A6FFC598)
+[LOG] SoundI::release                          :     birds4 (000002138BE4D1F8)
+[LOG] SoundI::release                          :  (00000213A6FFAD28)
+[LOG] SoundI::release                          :     birds5 (000002138BE4C018)
+[LOG] SoundI::release                          :  (00000213A6FFBFD8)
+[LOG] SoundI::release                          :     birds6 (000002138BE4F8F8)
+[LOG] SoundI::release                          :  (00000213A6FFA5F8)
+[LOG] SoundI::release                          :     birds7 (000002138BE4DEF8)
+[LOG] SoundI::release                          :  (00000213A6FFBB88)
+[LOG] SoundI::release                          :     birds8 (000002138BE4C9D8)
+[LOG] SoundI::release                          :  (00000213A6FF9068)
+[LOG] SoundI::release                          :     birds9 (000002138BE4C4F8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
